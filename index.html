@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>📊 观复市场</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f172a;color:#e2e8f0;font-family:'PingFang SC',system-ui,sans-serif;padding:16px;min-height:100vh}
+h1{text-align:center;font-size:1.8em;padding:12px 0 0}
+.update{text-align:center;color:#94a3b8;font-size:.8em;padding:4px 0 12px}
+.signal{padding:14px 20px;border-radius:10px;text-align:center;font-size:1.2em;font-weight:bold;margin:0 auto 16px;max-width:800px}
+.hot{background:#7f1d1d;color:#fca5a5} .warm{background:#78350f;color:#fcd34d}
+.normal{background:#1e3a5f;color:#93c5fd} .cold{background:#312e81;color:#c4b5fd}
+.row{display:flex;flex-wrap:wrap;gap:12px;max-width:1600px;margin:0 auto 12px}
+.kv{display:flex;flex-wrap:wrap;gap:10px;max-width:1600px;margin:0 auto 12px}
+.kv-item{flex:1;min-width:150px;background:#1e293b;border-radius:10px;padding:14px;text-align:center}
+.kv-val{font-size:1.8em;font-weight:bold}
+.kv-lab{color:#94a3b8;font-size:.75em;margin-top:4px}
+.card{flex:1;min-width:350px;background:#1e293b;border-radius:10px;padding:14px}
+.chart{width:100%;height:320px}
+.heatmap-card{background:#1e293b;border-radius:10px;padding:14px;max-width:1600px;margin:0 auto 12px}
+.heatmap{width:100%;height:550px}
+@media(max-width:768px){.card{min-width:100%}.kv-item{min-width:45%}.heatmap{height:400px}}
+</style>
+</head>
+<body>
+<h1>📊 观复市场</h1>
+<div class="update" id="updateTime">加载中...</div>
+<div id="signalBox" class="signal normal">⏳</div>
+<div class="kv" id="kvGrid"></div>
+<div class="row">
+  <div class="card"><div class="chart" id="cTurnover"></div></div>
+  <div class="card"><div class="chart" id="cIndex"></div></div>
+</div>
+<div class="heatmap-card"><div class="heatmap" id="cHeatmap"></div></div>
+<div class="row">
+  <div class="card"><div class="chart" id="cMargin"></div></div>
+  <div class="card"><div class="chart" id="cHigh"></div></div>
+</div>
+<script>
+async function load(){
+  const t=Date.now();
+  const r1=await fetch('data.json?t='+t).then(r=>r.json());
+  const r2=await fetch('data_etf.json?t='+t).then(r=>r.json());
+  render(r1,r2);
+}
+function render(market, etf){
+  const last=market[market.length-1];
+  document.getElementById('updateTime').textContent='更新: '+last.time+'  |  数据点: '+market.length;
+  
+  // 信号灯
+  const avg=last.turnover_avg, high=last.high_turnover_count;
+  let sig,cls;
+  if(avg>3||high>300){sig='🔥 情绪过热';cls='hot'}
+  else if(avg>2){sig='🟡 情绪偏热';cls='warm'}
+  else if(avg>1){sig='🟢 情绪正常';cls='normal'}
+  else if(avg>0.4){sig='🔵 情绪偏冷';cls='cold'}
+  else{sig='❄️ 情绪冰点';cls='cold'}
+  const sb=document.getElementById('signalBox');
+  sb.textContent=sig+'  |  换手率均值 '+avg.toFixed(2)+'%  |  >10%换手 '+high+'只';
+  sb.className='signal '+cls;
+  
+  // KPI
+  const margin=last.margin_balance?(last.margin_balance/1e8).toFixed(0)+'亿':'N/A';
+  const marginChg=last.margin_change?((last.margin_change>0?'+':'')+(last.margin_change/1e8).toFixed(1)+'亿'):'N/A';
+  const hottest=etf.length>0?etf[etf.length-1].top10[0].category+' +'+etf[etf.length-1].top10[0].pct.toFixed(1)+'%':'N/A';
+  document.getElementById('kvGrid').innerHTML=[
+    {v:avg.toFixed(2)+'%',l:'换手率均值'},{v:last.turnover_median.toFixed(2)+'%',l:'换手率中位数'},
+    {v:high+'只',l:'>10%换手'},{v:margin,l:'融资余额'},{v:marginChg,l:'余额变化'},
+    {v:hottest,l:'最热ETF品类'}
+  ].map(i=>'<div class="kv-item"><div class="kv-val">'+i.v+'</div><div class="kv-lab">'+i.l+'</div></div>').join('');
+  
+  // ===== 图表 =====
+  const times=market.map(x=>x.time.slice(11,16));
+  const mk=(id,series)=>echarts.init(document.getElementById(id)).setOption({
+    tooltip:{trigger:'axis'},grid:{left:50,right:20,top:20,bottom:30},
+    xAxis:{type:'category',data:times,axisLabel:{color:'#94a3b8',fontSize:9,rotate:times.length>100?30:0}},
+    yAxis:{type:'value',axisLabel:{color:'#94a3b8'}},
+    series:series.map(s=>({...s,type:'line',smooth:true,symbol:'none'}))
+  });
+  
+  mk('cTurnover',[
+    {name:'均值%',data:market.map(x=>x.turnover_avg),itemStyle:{color:'#3b82f6'}},
+    {name:'中位数%',data:market.map(x=>x.turnover_median),itemStyle:{color:'#8b5cf6'}}
+  ]);
+  
+  mk('cIndex',['上证指数','深证成指','创业板指','科创50'].map(n=>({
+    name:n,data:market.map(x=>x.indexes&&x.indexes[n]?x.indexes[n].change_pct:null)
+  })));
+  
+  mk('cMargin',[{
+    name:'融资余额(亿)',data:market.map(x=>x.margin_balance?x.margin_balance/1e8:null),
+    itemStyle:{color:'#f59e0b'},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
+      colorStops:[{offset:0,color:'rgba(245,158,11,0.3)'},{offset:1,color:'rgba(245,158,11,0.02)'}]}}
+  }]);
+  
+  mk('cHigh',[{
+    name:'>10%换手股票数',data:market.map(x=>x.high_turnover_count),
+    itemStyle:{color:'#ef4444'},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
+      colorStops:[{offset:0,color:'rgba(239,68,68,0.3)'},{offset:1,color:'rgba(239,68,68,0.02)'}]}}
+  }]);
+  
+  // ===== 热力图 =====
+  if(etf.length===0) return;
+  
+  // 取最近20天数据
+  const recent=etf.slice(-20);
+  const days=recent.map(x=>x.date.slice(5));
+  
+  // 收集所有出现过的品类
+  const catSet=new Set();
+  recent.forEach(d=>d.top10.forEach(c=>catSet.add(c.category)));
+  const categories=Array.from(catSet);
+  
+  // 构建热力图数据：[日期idx, 品类idx, 涨幅]
+  const hmData=[];
+  const maxVal=Math.max(...recent.flatMap(d=>d.top10.map(c=>Math.abs(c.pct))),1);
+  
+  recent.forEach((d,di)=>{
+    const catMap={};
+    d.top10.forEach(c=>catMap[c.category]=c.pct);
+    categories.forEach((cat,ci)=>{
+      if(catMap[cat]!==undefined){
+        hmData.push([di,ci,catMap[cat]]);
+      }
+    });
+  });
+  
+  echarts.init(document.getElementById('cHeatmap')).setOption({
+    tooltip:{position:'top',formatter:p=>{
+      const cat=categories[p.value[1]],val=p.value[2];
+      return days[p.value[0]]+' '+cat+': '+(val>0?'+':'')+val.toFixed(1)+'%';
+    }},
+    grid:{left:110,right:60,top:10,bottom:40},
+    xAxis:{type:'category',data:days,axisLabel:{color:'#94a3b8',fontSize:10,rotate:30,interval:0}},
+    yAxis:{type:'category',data:categories,axisLabel:{color:'#e2e8f0',fontSize:11}},
+    visualMap:{min:-maxVal,max:maxVal,calculable:true,orient:'vertical',
+      right:5,top:'center',textStyle:{color:'#94a3b8'},
+      inRange:{color:['#1d4ed8','#2563eb','#1e293b','#dc2626','#991b1b']}},
+    series:[{type:'heatmap',data:hmData,label:{show:false},emphasis:{
+      itemStyle:{shadowBlur:10,shadowColor:'rgba(0,0,0,0.5)'}}}]
+  });
+}
+load();
+</script>
+</body>
+</html>
