@@ -30,5 +30,21 @@
         "change_pct": 519
       }
     }
+  },
+  {
+    "time": "2026-05-06 10:30:00",
+    "turnover_avg": 5.93,
+    "turnover_median": 5.32,
+    "total_stocks": 99,
+    "high_turnover_count": 18,
+    "margin_balance": null,
+    "margin_change": null,
+    "margin_buy": null,
+    "indexes": {
+      "未知": {
+        "price": 170754,
+        "change_pct": 869
+      }
+    }
   }
 ]
