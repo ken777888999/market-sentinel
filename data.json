@@ -78,5 +78,16 @@
         "change_pct": 664
       }
     }
+  },
+  {
+    "time": "2026-05-06 19:35:46",
+    "turnover_avg": 0,
+    "turnover_median": 0,
+    "total_stocks": 0,
+    "high_turnover_count": 0,
+    "margin_balance": 2695579480417.0,
+    "margin_change": -16911734238.0,
+    "margin_buy": 268807046409.0,
+    "margin_net_buy": -16911734279.0
   }
 ]
