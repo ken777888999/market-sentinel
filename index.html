@@ -19,7 +19,13 @@ h1{text-align:center;font-size:1.8em;padding:12px 0 0}
 .kv-lab{color:#94a3b8;font-size:.75em;margin-top:4px}
 .card{flex:1;min-width:350px;background:#1e293b;border-radius:10px;padding:14px}
 .chart{width:100%;height:320px}
-.heatmap-card{background:#1e293b;border-radius:10px;padding:14px;max-width:1600px;margin:0 auto 12px}
+.etf-table-card{background:#1e293b;border-radius:10px;padding:14px;max-width:1600px;margin:0 auto 12px}
+.etf-table{width:100%;border-collapse:collapse;font-size:.85em}
+.etf-table th{text-align:left;padding:8px 10px;color:#94a3b8;border-bottom:1px solid #334155;font-weight:normal}
+.etf-table td{padding:8px 10px;border-bottom:1px solid #1e293b}
+.etf-table tr:hover{background:#334155}
+.etf-table .up{color:#f87171}.etf-table .down{color:#34d399}
+.etf-table .medal{font-size:1.1em}
 .heatmap{width:100%;height:550px}
 @media(max-width:768px){.card{min-width:100%}.kv-item{min-width:45%}.heatmap{height:400px}}
 </style>
@@ -31,12 +37,15 @@ h1{text-align:center;font-size:1.8em;padding:12px 0 0}
 <div class="kv" id="kvGrid"></div>
 <div class="row">
   <div class="card"><div class="chart" id="cTurnover"></div></div>
-  <div class="card"><div class="chart" id="cIndex"></div></div>
+  <div class="card"><div class="chart" id="cHigh"></div></div>
 </div>
 <div class="heatmap-card"><div class="heatmap" id="cHeatmap"></div></div>
+<div class="etf-table-card" id="etfTableCard" style="display:none">
+  <h3 style="margin:0 0 10px;font-size:1em">🏆 涨幅 Top 10 ETF</h3>
+  <table class="etf-table" id="etfTable"></table>
+</div>
 <div class="row">
-  <div class="card"><div class="chart" id="cMargin"></div></div>
-  <div class="card"><div class="chart" id="cHigh"></div></div>
+  <div class="card" style="flex:100%"><div class="chart" id="cMargin"></div></div>
 </div>
 <script>
 async function load(){
@@ -85,10 +94,6 @@ function render(market, etf){
     {name:'中位数%',data:market.map(x=>x.turnover_median),itemStyle:{color:'#8b5cf6'}}
   ]);
   
-  mk('cIndex',['上证指数','深证成指','创业板指','科创50'].map(n=>({
-    name:n,data:market.map(x=>x.indexes&&x.indexes[n]?x.indexes[n].change_pct:null)
-  })));
-  
   mk('cMargin',[{
     name:'融资余额(亿)',data:market.map(x=>x.margin_balance?x.margin_balance/1e8:null),
     itemStyle:{color:'#f59e0b'},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
@@ -101,7 +106,32 @@ function render(market, etf){
       colorStops:[{offset:0,color:'rgba(239,68,68,0.3)'},{offset:1,color:'rgba(239,68,68,0.02)'}]}}
   }]);
   
-  // ===== 热力图 =====
+  // ===== ETF Top10 表格 =====
+  if(etf.length>0){
+    const lastEtf=etf[etf.length-1];
+    const tableCard=document.getElementById('etfTableCard');
+    tableCard.style.display='block';
+    
+    const medals=['🥇','🥈','🥉','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣','🔟'];
+    const rows=lastEtf.top10.map((e,i)=>{
+      const sign=e.pct>=0?'+':'';
+      const cls=e.pct>=0?'up':'down';
+      let amtStr;
+      if(e.amount>=1e8) amtStr=(e.amount/1e8).toFixed(2)+'亿';
+      else if(e.amount>=1e4) amtStr=(e.amount/1e4).toFixed(0)+'万';
+      else amtStr=e.amount.toFixed(0)+'元';
+      return `<tr>
+        <td style="width:30px">${medals[i]}</td>
+        <td>${e.name}</td>
+        <td style="color:#94a3b8;font-size:.8em">${e.code}</td>
+        <td class="${cls}" style="text-align:right;font-weight:bold">${sign}${e.pct.toFixed(2)}%</td>
+        <td style="text-align:right;color:#94a3b8">${amtStr}</td>
+      </tr>`;
+    }).join('');
+    
+    document.getElementById('etfTable').innerHTML=
+      `<tr><th></th><th>名称</th><th>代码</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">成交额</th></tr>${rows}`;
+  }
   if(etf.length===0) return;
   
   // 取最近20天数据
@@ -137,7 +167,7 @@ function render(market, etf){
     yAxis:{type:'category',data:categories,axisLabel:{color:'#e2e8f0',fontSize:11}},
     visualMap:{min:-maxVal,max:maxVal,calculable:true,orient:'vertical',
       right:5,top:'center',textStyle:{color:'#94a3b8'},
-      inRange:{color:['#1d4ed8','#2563eb','#1e293b','#dc2626','#991b1b']}},
+      inRange:{color:['#15803d','#22c55e','#1e293b','#dc2626','#991b1b']}},
     series:[{type:'heatmap',data:hmData,label:{show:false},emphasis:{
       itemStyle:{shadowBlur:10,shadowColor:'rgba(0,0,0,0.5)'}}}]
   });
