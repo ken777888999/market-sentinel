@@ -2,38 +2,44 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>📊 观复市场</title>
+<title>📊 观复市场 — 实时看板</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0f172a;color:#e2e8f0;font-family:'PingFang SC',system-ui,sans-serif;padding:16px;min-height:100vh}
-h1{text-align:center;font-size:1.8em;padding:12px 0 0}
+h1{text-align:center;font-size:1.8em;padding:12px 0 6px}
+.subtitle{text-align:center;color:#64748b;font-size:.78em;padding:0 0 8px}
 .update{text-align:center;color:#94a3b8;font-size:.8em;padding:4px 0 12px}
-.signal{padding:14px 20px;border-radius:10px;text-align:center;font-size:1.2em;font-weight:bold;margin:0 auto 16px;max-width:800px}
+.signal{padding:14px 20px;border-radius:10px;text-align:center;font-size:1.15em;font-weight:bold;margin:0 auto 12px;max-width:800px}
 .hot{background:#7f1d1d;color:#fca5a5} .warm{background:#78350f;color:#fcd34d}
 .normal{background:#1e3a5f;color:#93c5fd} .cold{background:#312e81;color:#c4b5fd}
 .row{display:flex;flex-wrap:wrap;gap:12px;max-width:1600px;margin:0 auto 12px}
 .kv{display:flex;flex-wrap:wrap;gap:10px;max-width:1600px;margin:0 auto 12px}
-.kv-item{flex:1;min-width:150px;background:#1e293b;border-radius:10px;padding:14px;text-align:center}
-.kv-val{font-size:1.8em;font-weight:bold}
+.kv-item{flex:1;min-width:140px;background:#1e293b;border-radius:10px;padding:14px;text-align:center}
+.kv-val{font-size:1.7em;font-weight:bold}
 .kv-lab{color:#94a3b8;font-size:.75em;margin-top:4px}
-.card{flex:1;min-width:350px;background:#1e293b;border-radius:10px;padding:14px}
-.chart{width:100%;height:320px}
+.card{flex:1;min-width:340px;background:#1e293b;border-radius:10px;padding:14px}
+.chart{width:100%;height:300px}
 .etf-table-card{background:#1e293b;border-radius:10px;padding:14px;max-width:1600px;margin:0 auto 12px}
 .etf-table{width:100%;border-collapse:collapse;font-size:.85em}
 .etf-table th{text-align:left;padding:8px 10px;color:#94a3b8;border-bottom:1px solid #334155;font-weight:normal}
 .etf-table td{padding:8px 10px;border-bottom:1px solid #1e293b}
 .etf-table tr:hover{background:#334155}
-.etf-table .up{color:#f87171}.etf-table .down{color:#34d399}
-.etf-table .medal{font-size:1.1em}
-.heatmap{width:100%;height:550px}
-@media(max-width:768px){.card{min-width:100%}.kv-item{min-width:45%}.heatmap{height:400px}}
+.up{color:#f87171}.down{color:#34d399}
+.heatmap-card{max-width:1600px;margin:0 auto 10px;background:#1e293b;border-radius:10px;padding:14px}
+.heatmap{width:100%;height:500px}
+.footer{text-align:center;color:#475569;font-size:.72em;padding:16px 0 8px}
+.footer a{color:#64748b;text-decoration:none}
+.loading{text-align:center;padding:60px;color:#64748b;font-size:1.1em}
+.error{background:#7f1d1d;color:#fca5a5;padding:12px 20px;border-radius:10px;text-align:center;max-width:600px;margin:20px auto;font-size:.9em;display:none}
+@media(max-width:768px){.card{min-width:100%}.kv-item{min-width:44%}.heatmap{height:380px}h1{font-size:1.4em}}
 </style>
 </head>
 <body>
 <h1>📊 观复市场</h1>
+<p class="subtitle">万物并作，吾以观复 — 市场数据实时看板</p>
 <div class="update" id="updateTime">加载中...</div>
-<div id="signalBox" class="signal normal">⏳</div>
+<div id="signalBox" class="signal normal">⏳ 加载中...</div>
 <div class="kv" id="kvGrid"></div>
 <div class="row">
   <div class="card"><div class="chart" id="cTurnover"></div></div>
@@ -41,138 +47,191 @@ h1{text-align:center;font-size:1.8em;padding:12px 0 0}
 </div>
 <div class="heatmap-card"><div class="heatmap" id="cHeatmap"></div></div>
 <div class="etf-table-card" id="etfTableCard" style="display:none">
-  <h3 style="margin:0 0 10px;font-size:1em">🏆 涨幅 Top 10 ETF</h3>
+  <h3 style="margin:0 0 10px;font-size:1em">🏆 ETF 涨幅 Top 10（最新）</h3>
   <table class="etf-table" id="etfTable"></table>
 </div>
 <div class="row">
   <div class="card" style="flex:100%"><div class="chart" id="cMargin"></div></div>
 </div>
+<div class="error" id="errorBox"></div>
+<div class="footer">
+  数据来源：东方财富 / 新浪财经 ｜ <a href="https://github.com/kenhuhu/market-sentinel" target="_blank">GitHub</a> ｜ 自动更新于交易日 10:30/11:30/14:00/15:00
+</div>
+
 <script>
+const E = echarts;
+
 async function load(){
-  const t=Date.now();
-  const r1=await fetch('data.json?t='+t).then(r=>r.json());
-  const r2=await fetch('data_etf.json?t='+t).then(r=>r.json());
-  render(r1,r2);
+  try{
+    const t=Date.now();
+    const [r1,r2] = await Promise.all([
+      fetch('data.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data.json '+r.status)),
+      fetch('data_etf.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status))
+    ]);
+    render(r1,r2);
+    document.getElementById('errorBox').style.display='none';
+  }catch(e){
+    document.getElementById('errorBox').style.display='block';
+    document.getElementById('errorBox').textContent='⚠️ 数据加载失败: '+e.message+' — 请检查数据源是否正常更新';
+    document.getElementById('signalBox').textContent='❌ 数据不可用';
+    document.getElementById('updateTime').textContent='加载失败';
+  }
 }
+
 function render(market, etf){
-  const last=market[market.length-1];
-  document.getElementById('updateTime').textContent='更新: '+last.time+'  |  数据点: '+market.length;
+  if(!market || !market.length) return;
   
-  // 信号灯
-  const avg=last.turnover_avg, high=last.high_turnover_count;
-  let sig,cls;
-  if(avg>3||high>300){sig='🔥 情绪过热';cls='hot'}
-  else if(avg>2){sig='🟡 情绪偏热';cls='warm'}
-  else if(avg>1){sig='🟢 情绪正常';cls='normal'}
-  else if(avg>0.4){sig='🔵 情绪偏冷';cls='cold'}
-  else{sig='❄️ 情绪冰点';cls='cold'}
-  const sb=document.getElementById('signalBox');
-  sb.textContent=sig+'  |  换手率均值 '+avg.toFixed(2)+'%  |  >10%换手 '+high+'只';
-  sb.className='signal '+cls;
+  const last = market[market.length-1];
+  document.getElementById('updateTime').textContent = '📅 更新: '+last.time+'  |  📊 共 '+market.length+' 个数据点';
   
-  // KPI
-  const margin=last.margin_balance?(last.margin_balance/1e8).toFixed(0)+'亿':'N/A';
-  const marginChg=last.margin_change?((last.margin_change>0?'+':'')+(last.margin_change/1e8).toFixed(1)+'亿'):'N/A';
-  const hottest=etf.length>0?etf[etf.length-1].top10[0].category+' +'+etf[etf.length-1].top10[0].pct.toFixed(1)+'%':'N/A';
-  document.getElementById('kvGrid').innerHTML=[
-    {v:avg.toFixed(2)+'%',l:'换手率均值'},{v:last.turnover_median.toFixed(2)+'%',l:'换手率中位数'},
-    {v:high+'只',l:'>10%换手'},{v:margin,l:'融资余额'},{v:marginChg,l:'余额变化'},
-    {v:hottest,l:'最热ETF品类'}
-  ].map(i=>'<div class="kv-item"><div class="kv-val">'+i.v+'</div><div class="kv-lab">'+i.l+'</div></div>').join('');
+  // === 信号灯 ===
+  const avg = last.turnover_avg || 0;
+  const high = last.high_turnover_count || 0;
+  let sig, cls;
+  if(avg > 3 || high > 300){ sig = '🔥 情绪过热 — 注意风险'; cls = 'hot'; }
+  else if(avg > 2){ sig = '🟡 情绪偏热 — 保持观察'; cls = 'warm'; }
+  else if(avg > 1){ sig = '🟢 情绪正常 — 正常交易'; cls = 'normal'; }
+  else if(avg > 0.4){ sig = '🔵 情绪偏冷 — 可关注抄底'; cls = 'cold'; }
+  else{ sig = '❄️ 情绪冰点 — 极端低活跃度'; cls = 'cold'; }
   
-  // ===== 图表 =====
-  const times=market.map(x=>x.time.slice(11,16));
-  const mk=(id,series)=>echarts.init(document.getElementById(id)).setOption({
-    tooltip:{trigger:'axis'},grid:{left:50,right:20,top:20,bottom:30},
-    xAxis:{type:'category',data:times,axisLabel:{color:'#94a3b8',fontSize:9,rotate:times.length>100?30:0}},
-    yAxis:{type:'value',axisLabel:{color:'#94a3b8'}},
-    series:series.map(s=>({...s,type:'line',smooth:true,symbol:'circle',symbolSize:4}))
-  });
+  const sb = document.getElementById('signalBox');
+  sb.textContent = sig + '  |  换手率均值 ' + avg.toFixed(2) + '%  |  >10%换手 ' + high + '只';
+  sb.className = 'signal ' + cls;
   
-  mk('cTurnover',[
-    {name:'均值%',data:market.map(x=>x.turnover_avg),itemStyle:{color:'#3b82f6'}},
-    {name:'中位数%',data:market.map(x=>x.turnover_median),itemStyle:{color:'#8b5cf6'}}
+  // === KPI 卡片 ===
+  const margin = last.margin_balance ? (last.margin_balance/1e8).toFixed(0)+'亿' : 'N/A';
+  const marginChg = last.margin_change ? ((last.margin_change>0?'+':'')+(last.margin_change/1e8).toFixed(1)+'亿') : 'N/A';
+  
+  let hottest = 'N/A';
+  if(etf && etf.length > 0){
+    const le = etf[etf.length-1];
+    if(le.top10 && le.top10.length > 0){
+      hottest = le.top10[0].category + ' +' + le.top10[0].pct.toFixed(1) + '%';
+    }
+  }
+  
+  document.getElementById('kvGrid').innerHTML = [
+    {v: avg.toFixed(2)+'%', l:'换手率均值'},
+    {v: last.turnover_median?.toFixed(2)+'%' || 'N/A', l:'换手中位数'},
+    {v: high+'只', l:'>10%换手'},
+    {v: margin, l:'融资余额'},
+    {v: marginChg, l:'余额变化'},
+    {v: hottest, l:'最热ETF'}
+  ].map(i => '<div class="kv-item"><div class="kv-val">'+i.v+'</div><div class="kv-lab">'+i.l+'</div></div>').join('');
+  
+  // === 辅助函数 ===
+  const times = market.map(x => x.time.slice(11,16));
+  const mk = (id, series) => {
+    const dom = document.getElementById(id);
+    if(!dom) return;
+    E.init(dom).setOption({
+      tooltip: { trigger: 'axis' },
+      grid: { left: 55, right: 20, top: 15, bottom: 30 },
+      xAxis: { type:'category', data:times, axisLabel:{color:'#94a3b8',fontSize:9,rotate:times.length>80?30:0} },
+      yAxis: { type:'value', axisLabel:{color:'#94a3b8'} },
+      series: series.map(s => ({ ...s, type:'line', smooth:true, symbol:'circle', symbolSize:3 }))
+    });
+  };
+  
+  // === 图表 ===
+  mk('cTurnover', [
+    { name:'均值%', data:market.map(x=>x.turnover_avg), itemStyle:{color:'#3b82f6'} },
+    { name:'中位数%', data:market.map(x=>x.turnover_median), itemStyle:{color:'#8b5cf6'} }
   ]);
   
-  mk('cMargin',[{
-    name:'融资余额(亿)',data:market.map(x=>x.margin_balance?x.margin_balance/1e8:null),
-    itemStyle:{color:'#f59e0b'},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
-      colorStops:[{offset:0,color:'rgba(245,158,11,0.3)'},{offset:1,color:'rgba(245,158,11,0.02)'}]}}
-  }]);
-  
-  mk('cHigh',[{
-    name:'>10%换手股票数',data:market.map(x=>x.high_turnover_count),
-    itemStyle:{color:'#ef4444'},areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
+  mk('cHigh', [{
+    name:'>10%换手(只)', data:market.map(x=>x.high_turnover_count),
+    itemStyle:{color:'#ef4444'},
+    areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
       colorStops:[{offset:0,color:'rgba(239,68,68,0.3)'},{offset:1,color:'rgba(239,68,68,0.02)'}]}}
   }]);
   
-  // ===== ETF Top10 表格 =====
-  if(etf.length>0){
-    const lastEtf=etf[etf.length-1];
-    const tableCard=document.getElementById('etfTableCard');
-    tableCard.style.display='block';
+  mk('cMargin', [{
+    name:'融资余额(亿)', data:market.map(x=>x.margin_balance?x.margin_balance/1e8:null),
+    itemStyle:{color:'#f59e0b'},
+    areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,
+      colorStops:[{offset:0,color:'rgba(245,158,11,0.25)'},{offset:1,color:'rgba(245,158,11,0.02)'}]}}
+  }]);
+  
+  // === ETF 表格 ===
+  if(etf && etf.length > 0){
+    const le = etf[etf.length-1];
+    const tc = document.getElementById('etfTableCard');
+    tc.style.display = 'block';
     
-    const medals=['🥇','🥈','🥉','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣','🔟'];
-    const rows=lastEtf.top10.map((e,i)=>{
-      const sign=e.pct>=0?'+':'';
-      const cls=e.pct>=0?'up':'down';
-      let amtStr;
-      if(e.amount>=1e8) amtStr=(e.amount/1e8).toFixed(2)+'亿';
-      else if(e.amount>=1e4) amtStr=(e.amount/1e4).toFixed(0)+'万';
-      else amtStr=e.amount.toFixed(0)+'元';
+    const medals = ['🥇','🥈','🥉','4','5','6','7','8','9','10'];
+    const rows = le.top10.map((e,i) => {
+      const sign = e.pct >= 0 ? '+' : '';
+      const cls = e.pct >= 0 ? 'up' : 'down';
+      let amtStr = '';
+      if(e.amount >= 1e8) amtStr = (e.amount/1e8).toFixed(2)+'亿';
+      else if(e.amount >= 1e4) amtStr = (e.amount/1e4).toFixed(0)+'万';
+      else amtStr = e.amount.toFixed(0);
       return `<tr>
-        <td style="width:30px">${medals[i]}</td>
-        <td>${e.name}</td>
-        <td style="color:#94a3b8;font-size:.8em">${e.code}</td>
+        <td style="width:30px;text-align:center">${medals[i]}</td>
+        <td style="font-weight:500">${e.name}</td>
+        <td style="color:#64748b;font-size:.78em">${e.code}</td>
         <td class="${cls}" style="text-align:right;font-weight:bold">${sign}${e.pct.toFixed(2)}%</td>
         <td style="text-align:right;color:#94a3b8">${amtStr}</td>
       </tr>`;
     }).join('');
     
-    document.getElementById('etfTable').innerHTML=
+    document.getElementById('etfTable').innerHTML =
       `<tr><th></th><th>名称</th><th>代码</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">成交额</th></tr>${rows}`;
   }
-  if(etf.length===0) return;
   
-  // 取最近20天数据
-  const recent=etf.slice(-20);
-  const days=recent.map(x=>x.date.slice(5));
+  // === 热力图 ===
+  if(!etf || etf.length < 2) return;
   
-  // 收集所有出现过的品类
-  const catSet=new Set();
-  recent.forEach(d=>d.top10.forEach(c=>catSet.add(c.category)));
-  const categories=Array.from(catSet);
+  const recent = etf.slice(-20);
+  const days = recent.map(x => x.date.slice(5));
   
-  // 构建热力图数据：[日期idx, 品类idx, 涨幅]
-  const hmData=[];
-  const maxVal=Math.max(...recent.flatMap(d=>d.top10.map(c=>Math.abs(c.pct))),1);
+  const catSet = new Set();
+  recent.forEach(d => d.top10.forEach(c => catSet.add(c.category)));
+  const categories = Array.from(catSet);
   
-  recent.forEach((d,di)=>{
-    const catMap={};
-    d.top10.forEach(c=>catMap[c.category]=c.pct);
-    categories.forEach((cat,ci)=>{
-      if(catMap[cat]!==undefined){
-        hmData.push([di,ci,catMap[cat]]);
-      }
+  const hmData = [];
+  const allVals = recent.flatMap(d => d.top10.map(c => c.pct));
+  const maxVal = Math.max(...allVals.map(Math.abs), 0.5);
+  
+  recent.forEach((d, di) => {
+    const catMap = {};
+    d.top10.forEach(c => catMap[c.category] = c.pct);
+    categories.forEach((cat, ci) => {
+      if(catMap[cat] !== undefined) hmData.push([di, ci, catMap[cat]]);
     });
   });
   
-  echarts.init(document.getElementById('cHeatmap')).setOption({
-    tooltip:{position:'top',formatter:p=>{
-      const cat=categories[p.value[1]],val=p.value[2];
-      return days[p.value[0]]+' '+cat+': '+(val>0?'+':'')+val.toFixed(1)+'%';
-    }},
-    grid:{left:110,right:60,top:10,bottom:40},
-    xAxis:{type:'category',data:days,axisLabel:{color:'#94a3b8',fontSize:10,rotate:30,interval:0}},
-    yAxis:{type:'category',data:categories,axisLabel:{color:'#e2e8f0',fontSize:11}},
-    visualMap:{min:-maxVal,max:maxVal,calculable:true,orient:'vertical',
-      right:5,top:'center',textStyle:{color:'#94a3b8'},
-      inRange:{color:['#15803d','#22c55e','#1e293b','#dc2626','#991b1b']}},
-    series:[{type:'heatmap',data:hmData,label:{show:false},emphasis:{
-      itemStyle:{shadowBlur:10,shadowColor:'rgba(0,0,0,0.5)'}}}]
+  E.init(document.getElementById('cHeatmap')).setOption({
+    tooltip: {
+      position: 'top',
+      formatter: p => {
+        const cat = categories[p.value[1]], val = p.value[2];
+        return days[p.value[0]] + ' <b>' + cat + '</b>: ' + (val>0?'+':'') + val.toFixed(1) + '%';
+      }
+    },
+    grid: { left: 110, right: 60, top: 10, bottom: 40 },
+    xAxis: { type:'category', data:days, axisLabel:{color:'#94a3b8',fontSize:10,rotate:30,interval:0} },
+    yAxis: { type:'category', data:categories, axisLabel:{color:'#e2e8f0',fontSize:11} },
+    visualMap: {
+      min: -maxVal, max: maxVal, calculable: true,
+      orient: 'vertical', right: 5, top: 'center',
+      textStyle: { color: '#94a3b8' },
+      inRange: { color: ['#15803d','#22c55e','#1e293b','#dc2626','#991b1b'] }
+    },
+    series: [{
+      type: 'heatmap', data: hmData,
+      label: { show: false },
+      emphasis: { itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.5)' } }
+    }]
   });
 }
+
+// 页面加载
 load();
+
+// 每 5 分钟自动刷新
+setInterval(load, 300000);
 </script>
 </body>
 </html>
