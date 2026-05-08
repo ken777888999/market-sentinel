@@ -147,74 +147,74 @@
     "date": "2026-05-08",
     "top10": [
       {
-        "name": "机器人ETF易方达",
-        "code": "159530",
-        "pct": 2.79,
-        "amount": 805050321.028,
-        "category": "机器人"
-      },
-      {
-        "name": "机器人ETF鹏华",
-        "code": "159278",
-        "pct": 2.6,
-        "amount": 99844640.348,
-        "category": "机器人"
-      },
-      {
-        "name": "机器人ETF富国",
-        "code": "159272",
-        "pct": 2.54,
-        "amount": 132611267.359,
-        "category": "机器人"
-      },
-      {
-        "name": "机器人ETF景顺",
-        "code": "159559",
-        "pct": 2.48,
-        "amount": 147222882.462,
-        "category": "机器人"
-      },
-      {
-        "name": "家居家电ETF华泰柏瑞",
-        "code": "512430",
-        "pct": 1.79,
-        "amount": 24561586.0,
-        "category": "家电"
-      },
-      {
-        "name": "机器人ETF国泰",
-        "code": "159551",
-        "pct": 1.77,
-        "amount": 38465511.36,
-        "category": "机器人"
-      },
-      {
-        "name": "机器人ETF银华",
-        "code": "562360",
-        "pct": 1.69,
-        "amount": 31108985.0,
-        "category": "机器人"
-      },
-      {
-        "name": "汽车零部件ETF华夏",
-        "code": "562700",
-        "pct": 1.68,
-        "amount": 20941140.0,
+        "name": "航空航天ETF华泰柏瑞",
+        "code": "563380",
+        "pct": 3.83,
+        "amount": 107912079.0,
         "category": null
       },
       {
-        "name": "机器人ETF华夏",
-        "code": "562500",
-        "pct": 1.64,
-        "amount": 1017577903.0,
-        "category": "机器人"
+        "name": "航空航天ETF天弘",
+        "code": "159241",
+        "pct": 3.82,
+        "amount": 139607551.6,
+        "category": null
       },
       {
-        "name": "机器人ETF南方",
-        "code": "159258",
-        "pct": 1.63,
-        "amount": 63667118.636,
-        "category": "机器人"
+        "name": "卫星ETF鹏华",
+        "code": "563790",
+        "pct": 3.61,
+        "amount": 91286768.0,
+        "category": null
+      },
+      {
+        "name": "卫星ETF招商",
+        "code": "159218",
+        "pct": 3.61,
+        "amount": 293610017.014,
+        "category": null
+      },
+      {
+        "name": "航天ETF华安",
+        "code": "159267",
+        "pct": 3.61,
+        "amount": 145606243.1,
+        "category": null
+      },
+      {
+        "name": "卫星ETF易方达",
+        "code": "563530",
+        "pct": 3.6,
+        "amount": 185407249.0,
+        "category": null
+      },
+      {
+        "name": "卫星ETF富国",
+        "code": "563230",
+        "pct": 3.58,
+        "amount": 547314971.0,
+        "category": null
+      },
+      {
+        "name": "卫星ETF广发",
+        "code": "512630",
+        "pct": 3.58,
+        "amount": 384175945.0,
+        "category": null
+      },
+      {
+        "name": "航空航天ETF华夏",
+        "code": "159227",
+        "pct": 3.52,
+        "amount": 426968518.372,
+        "category": null
+      },
+      {
+        "name": "航空航天ETF万家",
+        "code": "159208",
+        "pct": 3.42,
+        "amount": 33931032.4,
+        "category": null
       }
     ]
   }
