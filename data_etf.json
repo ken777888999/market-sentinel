@@ -149,71 +149,71 @@
       {
         "name": "航空航天ETF华泰柏瑞",
         "code": "563380",
-        "pct": 3.83,
-        "amount": 107912079.0,
+        "pct": 3.99,
+        "amount": 152106090.0,
         "category": null
       },
       {
         "name": "航空航天ETF天弘",
         "code": "159241",
-        "pct": 3.82,
-        "amount": 139607551.6,
-        "category": null
-      },
-      {
-        "name": "卫星ETF鹏华",
-        "code": "563790",
-        "pct": 3.61,
-        "amount": 91286768.0,
-        "category": null
-      },
-      {
-        "name": "卫星ETF招商",
-        "code": "159218",
-        "pct": 3.61,
-        "amount": 293610017.014,
-        "category": null
-      },
-      {
-        "name": "航天ETF华安",
-        "code": "159267",
-        "pct": 3.61,
-        "amount": 145606243.1,
+        "pct": 3.67,
+        "amount": 185874974.8,
         "category": null
       },
       {
         "name": "卫星ETF易方达",
         "code": "563530",
         "pct": 3.6,
-        "amount": 185407249.0,
-        "category": null
-      },
-      {
-        "name": "卫星ETF富国",
-        "code": "563230",
-        "pct": 3.58,
-        "amount": 547314971.0,
+        "amount": 268637229.0,
         "category": null
       },
       {
         "name": "卫星ETF广发",
         "code": "512630",
         "pct": 3.58,
-        "amount": 384175945.0,
+        "amount": 491542160.0,
         "category": null
       },
       {
-        "name": "航空航天ETF华夏",
-        "code": "159227",
+        "name": "航天ETF华安",
+        "code": "159267",
         "pct": 3.52,
-        "amount": 426968518.372,
+        "amount": 195427853.194,
         "category": null
       },
       {
         "name": "航空航天ETF万家",
         "code": "159208",
-        "pct": 3.42,
-        "amount": 33931032.4,
+        "pct": 3.5,
+        "amount": 44967344.0,
+        "category": null
+      },
+      {
+        "name": "通用航空ETF鹏华",
+        "code": "563870",
+        "pct": 3.49,
+        "amount": 5211448.0,
+        "category": null
+      },
+      {
+        "name": "卫星ETF富国",
+        "code": "563230",
+        "pct": 3.4,
+        "amount": 760618787.0,
+        "category": null
+      },
+      {
+        "name": "航空航天ETF华夏",
+        "code": "159227",
+        "pct": 3.37,
+        "amount": 582335564.072,
+        "category": null
+      },
+      {
+        "name": "卫星ETF招商",
+        "code": "159218",
+        "pct": 3.3,
+        "amount": 396683806.823,
         "category": null
       }
     ]
