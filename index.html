@@ -32,7 +32,20 @@ h1{text-align:center;font-size:1.8em;padding:12px 0 6px}
 .footer a{color:#64748b;text-decoration:none}
 .loading{text-align:center;padding:60px;color:#64748b;font-size:1.1em}
 .error{background:#7f1d1d;color:#fca5a5;padding:12px 20px;border-radius:10px;text-align:center;max-width:600px;margin:20px auto;font-size:.9em;display:none}
-@media(max-width:768px){.card{min-width:100%}.kv-item{min-width:44%}.heatmap{height:380px}h1{font-size:1.4em}}
+.news-card{max-width:1600px;margin:12px auto;background:#1e293b;border-radius:10px;padding:16px}
+.news-grid{display:flex;gap:14px;flex-wrap:wrap}
+.news-col{flex:1;min-width:320px}
+.news-col h3{font-size:.9em;color:#e2e8f0;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid #334155}
+.news-item{padding:8px 0;border-bottom:1px solid #1e293b;font-size:.82em;line-height:1.5}
+.news-item:last-child{border-bottom:none}
+.news-item .title{color:#e2e8f0;display:block}
+.news-item .meta{color:#64748b;font-size:.75em;margin-top:2px}
+.news-item a{color:#60a5fa;text-decoration:none}
+.news-item a:hover{text-decoration:underline}
+.news-item .stock-name{color:#fbbf24;font-weight:500;margin-right:4px}
+.news-item .digest{color:#94a3b8;font-size:.78em;margin-top:3px;line-height:1.4}
+.rating-buy{color:#34d399}.rating-hold{color:#fbbf24}.rating-sell{color:#f87171}
+@media(max-width:768px){.card{min-width:100%}.kv-item{min-width:44%}.heatmap{height:380px}h1{font-size:1.4em}.news-col{min-width:100%}}
 </style>
 </head>
 <body>
@@ -45,13 +58,17 @@ h1{text-align:center;font-size:1.8em;padding:12px 0 6px}
   <div class="card"><div class="chart" id="cTurnover"></div></div>
   <div class="card"><div class="chart" id="cHigh"></div></div>
 </div>
+<div class="row">
+  <div class="card" style="flex:100%"><div class="chart" id="cMargin"></div></div>
+</div>
 <div class="heatmap-card"><div class="heatmap" id="cHeatmap"></div></div>
 <div class="etf-table-card" id="etfTableCard" style="display:none">
   <h3 style="margin:0 0 10px;font-size:1em">🏆 ETF 涨幅 Top 10（最新）</h3>
   <table class="etf-table" id="etfTable"></table>
 </div>
-<div class="row">
-  <div class="card" style="flex:100%"><div class="chart" id="cMargin"></div></div>
+<div class="news-card" id="newsCard" style="display:none">
+  <h2 style="font-size:1em;margin:0 0 12px">📰 自选股公告 & 研报</h2>
+  <div class="news-grid" id="newsGrid"></div>
 </div>
 <div class="error" id="errorBox"></div>
 <div class="footer">
@@ -64,11 +81,12 @@ const E = echarts;
 async function load(){
   try{
     const t=Date.now();
-    const [r1,r2] = await Promise.all([
+    const [r1,r2,r3] = await Promise.all([
       fetch('data.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data.json '+r.status)),
-      fetch('data_etf.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status))
+      fetch('data_etf.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status)),
+      fetch('data_news.json?t='+t).then(r=>r.ok?r.json():r.status===404?null:Promise.reject('data_news '+r.status))
     ]);
-    render(r1,r2);
+    render(r1,r2,r3);
     document.getElementById('errorBox').style.display='none';
   }catch(e){
     document.getElementById('errorBox').style.display='block';
@@ -78,7 +96,7 @@ async function load(){
   }
 }
 
-function render(market, etf){
+function render(market, etf, news){
   if(!market || !market.length) return;
   
   const last = market[market.length-1];
@@ -225,6 +243,64 @@ function render(market, etf){
       emphasis: { itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.5)' } }
     }]
   });
+  
+  // === 公告 & 研报 ===
+  renderNews(news);
+}
+
+function renderNews(newsData){
+  if(!newsData || !newsData.length) return;
+  const latest = newsData[newsData.length-1];
+  document.getElementById('newsCard').style.display = 'block';
+  
+  const announcements = latest.announcements || [];
+  const reports = latest.reports || [];
+  
+  // 公告列
+  let annHtml = '';
+  if(announcements.length > 0){
+    annHtml = announcements.slice(0, 15).map(a => {
+      const names = a.names || [];
+      const nameStr = names.length ? names.join(',') : '';
+      const url = a.url || '#';
+      const cat = a.category || '';
+      return `<div class="news-item">
+        <a href="${url}" target="_blank" class="title"><span class="stock-name">${nameStr}</span>${a.title}</a>
+        <div class="meta">${a.date} ${a.time||''} | ${cat}</div>
+      </div>`;
+    }).join('');
+  } else {
+    annHtml = '<div class="news-item" style="color:#64748b">暂无最新公告</div>';
+  }
+  
+  // 研报列
+  let repHtml = '';
+  if(reports.length > 0){
+    repHtml = reports.slice(0,15).map(r => {
+      let rc = 'rating-hold';
+      const rating = (r.rating||'').toLowerCase();
+      if(rating.includes('买入')||rating.includes('增持')||rating.includes('推荐')||rating.includes('buy')) rc = 'rating-buy';
+      else if(rating.includes('减持')||rating.includes('卖出')||rating.includes('sell')) rc = 'rating-sell';
+      
+      return `<div class="news-item">
+        <span class="title"><span class="stock-name">${r.name}</span>${r.title}</span>
+        <div class="meta">${r.org} | <span class="${rc}">${r.rating||'评级'}</span> | ${r.date}</div>
+        ${r.digest ? `<div class="digest">📝 ${r.digest}</div>` : ''}
+      </div>`;
+    }).join('');
+  } else {
+    repHtml = '<div class="news-item" style="color:#64748b">暂无最新研报（通常交易日发布）</div>';
+  }
+  
+  document.getElementById('newsGrid').innerHTML = 
+    `<div class="news-col">
+      <h3>📋 最新公告（${announcements.length}条 | ${latest.period}${latest.time||''}）</h3>
+      ${annHtml}
+    </div>
+    <div class="news-col">
+      <h3>📊 最新研报（${reports.length}篇）</h3>
+      ${repHtml}
+    </div>`;
 }
 
 // 页面加载
