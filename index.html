@@ -80,11 +80,11 @@ const E = echarts;
 
 async function load(){
   try{
-    const t=Date.now();
+    const t=Date.now(),r=Math.random().toString(36).slice(2);
     const [r1,r2,r3] = await Promise.all([
-      fetch('https://raw.githubusercontent.com/ken777888999/market-company/main/data.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data.json '+r.status)),
-      fetch('https://raw.githubusercontent.com/ken777888999/market-company/main/data_etf.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status)),
-      fetch('https://raw.githubusercontent.com/ken777888999/market-company/main/data_news.json?t='+t).then(r=>r.ok?r.json():r.status===404?null:Promise.reject('data_news '+r.status))
+      fetch('https://raw.githubusercontent.com/ken777888999/market-company/main/data.json?_t='+t+'&_r='+r).then(r=>r.ok?r.json():Promise.reject('data.json '+r.status)),
+      fetch('https://raw.githubusercontent.com/ken777888999/market-company/main/data_etf.json?_t='+t+'&_r='+r).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status)),
+      fetch('https://raw.githubusercontent.com/ken777888999/market-company/main/data_news.json?_t='+t+'&_r='+r).then(r=>r.ok?r.json():r.status===404?null:Promise.reject('data_news '+r.status))
     ]);
     render(r1,r2,r3);
     document.getElementById('errorBox').style.display='none';
@@ -259,7 +259,7 @@ function renderNews(newsData){
   // 公告列
   let annHtml = '';
   if(announcements.length > 0){
-    annHtml = announcements.slice(0, 15).map(a => {
+    annHtml = announcements.map(a => {
       const names = a.names || [];
       const nameStr = names.length ? names.join(',') : '';
       const url = a.url || '#';
@@ -276,7 +276,7 @@ function renderNews(newsData){
   // 研报列
   let repHtml = '';
   if(reports.length > 0){
-    repHtml = reports.slice(0,15).map(r => {
+    repHtml = reports.map(r => {
       let rc = 'rating-hold';
       const rating = (r.rating||'').toLowerCase();
       if(rating.includes('买入')||rating.includes('增持')||rating.includes('推荐')||rating.includes('buy')) rc = 'rating-buy';
