@@ -82,9 +82,9 @@ async function load(){
   try{
     const t=Date.now();
     const [r1,r2,r3] = await Promise.all([
-      fetch('data.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data.json '+r.status)),
-      fetch('data_etf.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status)),
-      fetch('data_news.json?t='+t).then(r=>r.ok?r.json():r.status===404?null:Promise.reject('data_news '+r.status))
+      fetch('https://raw.githubusercontent.com/kenhuhu/market-sentinel/main/data.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data.json '+r.status)),
+      fetch('https://raw.githubusercontent.com/kenhuhu/market-sentinel/main/data_etf.json?t='+t).then(r=>r.ok?r.json():Promise.reject('data_etf '+r.status)),
+      fetch('https://raw.githubusercontent.com/kenhuhu/market-sentinel/main/data_news.json?t='+t).then(r=>r.ok?r.json():r.status===404?null:Promise.reject('data_news '+r.status))
     ]);
     render(r1,r2,r3);
     document.getElementById('errorBox').style.display='none';
