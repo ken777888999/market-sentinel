@@ -220,6 +220,77 @@
   },
   {
     "date": "2026-05-09",
-    "top10": []
+    "top10": [
+      {
+        "name": "军工ETF国泰",
+        "code": "512660",
+        "pct": 1.94,
+        "amount": 48811.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "房地产ETF南方",
+        "code": "512200",
+        "pct": 1.22,
+        "amount": 19261.0,
+        "category": "地产"
+      },
+      {
+        "name": "游戏ETF华夏",
+        "code": "159869",
+        "pct": 1.12,
+        "amount": 91147.0,
+        "category": "传媒/游戏"
+      },
+      {
+        "name": "有色ETF大成",
+        "code": "159980",
+        "pct": 0.61,
+        "amount": 49539.0,
+        "category": "有色/资源"
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "513100",
+        "pct": 0.54,
+        "amount": 105945.0,
+        "category": null
+      },
+      {
+        "name": "计算机ETF天弘",
+        "code": "159998",
+        "pct": 0.53,
+        "amount": 10255.0,
+        "category": "计算机/信创"
+      },
+      {
+        "name": "中证1000ETF南方",
+        "code": "512100",
+        "pct": 0.37,
+        "amount": 300335.0,
+        "category": null
+      },
+      {
+        "name": "通信ETF华夏",
+        "code": "515050",
+        "pct": 0.32,
+        "amount": 56730.0,
+        "category": "通信/5G"
+      },
+      {
+        "name": "纳指ETF广发",
+        "code": "159941",
+        "pct": 0.2,
+        "amount": 144321.0,
+        "category": null
+      },
+      {
+        "name": "中概互联网ETF易方达",
+        "code": "513050",
+        "pct": 0.08,
+        "amount": 146908.0,
+        "category": null
+      }
+    ]
   }
 ]
