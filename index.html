@@ -189,13 +189,14 @@ function render(market, etf, news){
         <td style="width:30px;text-align:center">${medals[i]}</td>
         <td style="font-weight:500">${e.name}</td>
         <td style="color:#64748b;font-size:.78em">${e.code}</td>
+        <td style="color:#fbbf24;font-size:.78em">${e.category || '-'}</td>
         <td class="${cls}" style="text-align:right;font-weight:bold">${sign}${e.pct.toFixed(2)}%</td>
         <td style="text-align:right;color:#94a3b8">${amtStr}</td>
       </tr>`;
     }).join('');
     
     document.getElementById('etfTable').innerHTML =
-      `<tr><th></th><th>名称</th><th>代码</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">成交额</th></tr>${rows}`;
+      `<tr><th></th><th>名称</th><th>代码</th><th>品类</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">成交额</th></tr>${rows}`;
   }
   
   // === 热力图 ===
