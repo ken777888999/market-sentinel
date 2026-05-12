@@ -1847,5 +1847,195 @@
         "digest": ""
       }
     ]
+  },
+  {
+    "date": "2026-05-12",
+    "time": "21:00",
+    "period": "晚间",
+    "announcements": [
+      {
+        "art_code": "AN202605121822224386",
+        "title": "大族激光:2025年年度股东会决议公告",
+        "date": "2026-05-13",
+        "time": "20:04",
+        "category": "分配方案决议公告,股东大会决议公告",
+        "codes": [
+          "002008"
+        ],
+        "names": [
+          "大族激光"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002008/AN202605121822224386.html"
+      },
+      {
+        "art_code": "AN202605121822224407",
+        "title": "大族激光:北京市君合律师事务所关于大族激光科技产业集团股份有限公司2025年年度股东会的法律意见书",
+        "date": "2026-05-13",
+        "time": "20:04",
+        "category": "法律意见书",
+        "codes": [
+          "002008"
+        ],
+        "names": [
+          "大族激光"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002008/AN202605121822224407.html"
+      },
+      {
+        "art_code": "AN202605121822220813",
+        "title": "融捷股份:广东连越律师事务所关于融捷股份有限公司2025年度股东会法律意见书",
+        "date": "2026-05-13",
+        "time": "18:39",
+        "category": "法律意见书",
+        "codes": [
+          "002192"
+        ],
+        "names": [
+          "融捷股份"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002192/AN202605121822220813.html"
+      },
+      {
+        "art_code": "AN202605121822220737",
+        "title": "融捷股份:2025年度股东会决议公告",
+        "date": "2026-05-13",
+        "time": "18:37",
+        "category": "分配方案决议公告,股东大会决议公告",
+        "codes": [
+          "002192"
+        ],
+        "names": [
+          "融捷股份"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002192/AN202605121822220737.html"
+      },
+      {
+        "art_code": "AN202605121822220151",
+        "title": "金海通:股票交易异常波动公告",
+        "date": "2026-05-13",
+        "time": "18:23",
+        "category": "股票交易异常波动",
+        "codes": [
+          "603061"
+        ],
+        "names": [
+          "金海通"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/603061/AN202605121822220151.html"
+      },
+      {
+        "art_code": "AN202605121822215898",
+        "title": "华锐精密:2025年年度股东会会议资料",
+        "date": "2026-05-13",
+        "time": "17:09",
+        "category": "股东大会资料",
+        "codes": [
+          "688059"
+        ],
+        "names": [
+          "华锐精密"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688059/AN202605121822215898.html"
+      },
+      {
+        "art_code": "AN202605121822215761",
+        "title": "盛和资源:盛和资源控股股份有限公司关于为控股子公司提供担保的进展公告",
+        "date": "2026-05-13",
+        "time": "17:06",
+        "category": "提供/对外担保公告",
+        "codes": [
+          "600392"
+        ],
+        "names": [
+          "盛和资源"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600392/AN202605121822215761.html"
+      },
+      {
+        "art_code": "AN202605121822214508",
+        "title": "智微智能:关于2023年股票期权与限制性股票激励计划部分股票期权注销完成的公告",
+        "date": "2026-05-13",
+        "time": "16:47",
+        "category": "股本变动",
+        "codes": [
+          "001339"
+        ],
+        "names": [
+          "智微智能"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/001339/AN202605121822214508.html"
+      },
+      {
+        "art_code": "AN202605121822211869",
+        "title": "石大胜华:石大胜华关于参加2026年山东辖区上市公司投资者网上集体接待日活动的公告",
+        "date": "2026-05-13",
+        "time": "15:51",
+        "category": "调研活动",
+        "codes": [
+          "603026"
+        ],
+        "names": [
+          "石大胜华"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/603026/AN202605121822211869.html"
+      },
+      {
+        "art_code": "AN202605121822216117",
+        "title": "湖南裕能:关于举行2025年度网上业绩说明会的公告",
+        "date": "2026-05-12",
+        "time": "17:13",
+        "category": "其他",
+        "codes": [
+          "301358"
+        ],
+        "names": [
+          "湖南裕能"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301358/AN202605121822216117.html"
+      },
+      {
+        "art_code": "AN202605121822223706",
+        "title": "智微智能:2026年5月12日投资者关系活动记录表",
+        "date": "2026-05-12",
+        "time": "19:53",
+        "category": "调研活动",
+        "codes": [
+          "001339"
+        ],
+        "names": [
+          "智微智能"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/001339/AN202605121822223706.html"
+      },
+      {
+        "art_code": "AN202605121822223684",
+        "title": "上海新阳:300236上海新阳投资者关系管理信息20260512",
+        "date": "2026-05-12",
+        "time": "19:49",
+        "category": "调研活动",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605121822223684.html"
+      },
+      {
+        "art_code": "AN202605121822220885",
+        "title": "协创数据:关于控股股东部分股份解除质押的公告",
+        "date": "2026-05-12",
+        "time": "18:41",
+        "category": "股份质押、冻结",
+        "codes": [
+          "300857"
+        ],
+        "names": [
+          "协创数据"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300857/AN202605121822220885.html"
+      }
+    ],
+    "reports": []
   }
 ]
