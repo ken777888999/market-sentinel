@@ -449,72 +449,72 @@
       {
         "name": "科创半导体ETF华夏",
         "code": "588170",
-        "pct": 2.2,
-        "amount": 102184.0,
+        "pct": 3.09,
+        "amount": 143476.0,
         "category": "芯片/半导体"
       },
       {
-        "name": "绿色电力ETF嘉实",
-        "code": "159625",
-        "pct": 1.61,
-        "amount": 5423.0,
-        "category": "电力"
+        "name": "战略新兴ETF华夏",
+        "code": "512770",
+        "pct": 1.75,
+        "amount": 584.0,
+        "category": null
       },
       {
-        "name": "绿色电力ETF富国",
-        "code": "561170",
-        "pct": 1.58,
-        "amount": 2005.0,
-        "category": "电力"
+        "name": "半导体设备ETF国泰",
+        "code": "159516",
+        "pct": 1.64,
+        "amount": 157233.0,
+        "category": "芯片/半导体"
       },
       {
         "name": "有色ETF大成",
         "code": "159980",
-        "pct": 1.54,
-        "amount": 40752.0,
+        "pct": 1.63,
+        "amount": 47036.0,
         "category": "有色/资源"
       },
       {
-        "name": "绿色电力ETF国泰",
-        "code": "159669",
-        "pct": 1.52,
-        "amount": 676.0,
-        "category": "电力"
+        "name": "半导体设备ETF招商",
+        "code": "561980",
+        "pct": 1.59,
+        "amount": 23300.0,
+        "category": "芯片/半导体"
       },
       {
-        "name": "电力ETF博时",
-        "code": "561700",
-        "pct": 1.47,
-        "amount": 813.0,
-        "category": "电力"
+        "name": "半导体设备ETF华夏",
+        "code": "562590",
+        "pct": 1.51,
+        "amount": 24742.0,
+        "category": "芯片/半导体"
       },
       {
-        "name": "电力ETF天弘",
-        "code": "560450",
+        "name": "半导体ETF博时",
+        "code": "159582",
+        "pct": 1.51,
+        "amount": 6207.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "通信ETF富国",
+        "code": "159583",
+        "pct": 1.48,
+        "amount": 28580.0,
+        "category": "通信/5G"
+      },
+      {
+        "name": "半导体设备ETF广发",
+        "code": "560780",
         "pct": 1.44,
-        "amount": 3880.0,
-        "category": "电力"
+        "amount": 22571.0,
+        "category": "芯片/半导体"
       },
       {
-        "name": "电力ETF工银",
-        "code": "560270",
-        "pct": 1.33,
-        "amount": 1519.0,
-        "category": "电力"
-      },
-      {
-        "name": "电力ETF华安",
-        "code": "512140",
-        "pct": 1.27,
-        "amount": 2837.0,
-        "category": "电力"
-      },
-      {
-        "name": "电力ETF汇添富",
-        "code": "516370",
-        "pct": 1.27,
-        "amount": 2553.0,
-        "category": "电力"
+        "name": "半导体设备ETF易方达",
+        "code": "159558",
+        "pct": 1.4,
+        "amount": 79007.0,
+        "category": "芯片/半导体"
       }
     ]
   }
