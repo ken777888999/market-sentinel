@@ -597,31 +597,10 @@
     "date": "2026-05-14",
     "top10": [
       {
-        "name": "A50增强ETF富国",
-        "code": "563280",
-        "pct": 2.99,
-        "amount": 79.0,
-        "category": null
-      },
-      {
-        "name": "畜牧养殖ETF招商",
-        "code": "516670",
-        "pct": 1.97,
-        "amount": 4800.0,
-        "category": "农业"
-      },
-      {
-        "name": "养殖ETF国泰",
-        "code": "159865",
-        "pct": 1.86,
-        "amount": 27008.0,
-        "category": "农业"
-      },
-      {
-        "name": "养殖ETF鹏华",
-        "code": "159867",
-        "pct": 1.83,
-        "amount": 4592.0,
+        "name": "畜牧养殖ETF广发",
+        "code": "512450",
+        "pct": 1.76,
+        "amount": 999.0,
         "category": "农业"
       },
       {
@@ -632,38 +611,59 @@
         "category": "芯片/半导体"
       },
       {
-        "name": "畜牧养殖ETF广发",
-        "code": "512450",
+        "name": "畜牧养殖ETF招商",
+        "code": "516670",
         "pct": 1.66,
-        "amount": 779.0,
+        "amount": 5437.0,
         "category": "农业"
       },
       {
         "name": "养殖ETF平安",
         "code": "516760",
         "pct": 1.58,
-        "amount": 878.0,
+        "amount": 1017.0,
         "category": "农业"
       },
       {
-        "name": "中概互联网ETF易方达",
-        "code": "513050",
+        "name": "美国50ETF易方达",
+        "code": "513850",
         "pct": 1.57,
-        "amount": 340789.0,
-        "category": "港股/中概"
+        "amount": 24920.0,
+        "category": null
       },
       {
-        "name": "酒ETF鹏华",
-        "code": "512690",
-        "pct": 1.52,
-        "amount": 121786.0,
-        "category": "消费/白酒"
+        "name": "养殖ETF鹏华",
+        "code": "159867",
+        "pct": 1.5,
+        "amount": 5154.0,
+        "category": "农业"
+      },
+      {
+        "name": "养殖ETF国泰",
+        "code": "159865",
+        "pct": 1.35,
+        "amount": 33094.0,
+        "category": "农业"
+      },
+      {
+        "name": "农业ETF易方达",
+        "code": "562900",
+        "pct": 1.2,
+        "amount": 1431.0,
+        "category": "农业"
+      },
+      {
+        "name": "美国50ETF汇添富",
+        "code": "159577",
+        "pct": 1.1,
+        "amount": 13608.0,
+        "category": null
       },
       {
         "name": "港股通互联网ETF富国",
         "code": "159792",
-        "pct": 1.45,
-        "amount": 306820.0,
+        "pct": 1.01,
+        "amount": 334675.0,
         "category": "港股/中概"
       }
     ]
