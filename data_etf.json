@@ -597,25 +597,32 @@
     "date": "2026-05-14",
     "top10": [
       {
-        "name": "电信ETF鹏华",
-        "code": "560690",
-        "pct": 2.1,
-        "amount": 122.0,
-        "category": "通信/5G"
+        "name": "A50增强ETF富国",
+        "code": "563280",
+        "pct": 2.99,
+        "amount": 79.0,
+        "category": null
       },
       {
-        "name": "电信ETF汇添富",
-        "code": "560300",
-        "pct": 2.05,
-        "amount": 329.0,
-        "category": "通信/5G"
+        "name": "畜牧养殖ETF招商",
+        "code": "516670",
+        "pct": 1.97,
+        "amount": 4800.0,
+        "category": "农业"
       },
       {
-        "name": "中概互联网ETF易方达",
-        "code": "513050",
-        "pct": 1.82,
-        "amount": 280398.0,
-        "category": "港股/中概"
+        "name": "养殖ETF国泰",
+        "code": "159865",
+        "pct": 1.86,
+        "amount": 27008.0,
+        "category": "农业"
+      },
+      {
+        "name": "养殖ETF鹏华",
+        "code": "159867",
+        "pct": 1.83,
+        "amount": 4592.0,
+        "category": "农业"
       },
       {
         "name": "中韩半导体ETF华泰柏瑞",
@@ -625,46 +632,39 @@
         "category": "芯片/半导体"
       },
       {
-        "name": "中概互联网ETF嘉实",
-        "code": "159607",
-        "pct": 1.67,
-        "amount": 16464.0,
+        "name": "畜牧养殖ETF广发",
+        "code": "512450",
+        "pct": 1.66,
+        "amount": 779.0,
+        "category": "农业"
+      },
+      {
+        "name": "养殖ETF平安",
+        "code": "516760",
+        "pct": 1.58,
+        "amount": 878.0,
+        "category": "农业"
+      },
+      {
+        "name": "中概互联网ETF易方达",
+        "code": "513050",
+        "pct": 1.57,
+        "amount": 340789.0,
         "category": "港股/中概"
+      },
+      {
+        "name": "酒ETF鹏华",
+        "code": "512690",
+        "pct": 1.52,
+        "amount": 121786.0,
+        "category": "消费/白酒"
       },
       {
         "name": "港股通互联网ETF富国",
         "code": "159792",
-        "pct": 1.59,
-        "amount": 272125.0,
+        "pct": 1.45,
+        "amount": 306820.0,
         "category": "港股/中概"
-      },
-      {
-        "name": "中概互联ETF广发",
-        "code": "159605",
-        "pct": 1.33,
-        "amount": 37304.0,
-        "category": "港股/中概"
-      },
-      {
-        "name": "中概互联ETF招商",
-        "code": "513220",
-        "pct": 1.22,
-        "amount": 7554.0,
-        "category": "港股/中概"
-      },
-      {
-        "name": "物流ETF银华",
-        "code": "516530",
-        "pct": 1.15,
-        "amount": 255.0,
-        "category": null
-      },
-      {
-        "name": "物流ETF富国",
-        "code": "516910",
-        "pct": 0.99,
-        "amount": 2262.0,
-        "category": null
       }
     ]
   }
