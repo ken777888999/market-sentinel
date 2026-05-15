@@ -674,72 +674,72 @@
       {
         "name": "标普油气ETF富国",
         "code": "513350",
-        "pct": 6.21,
-        "amount": 181519.0,
+        "pct": 5.12,
+        "amount": 366620.0,
         "category": "海外QDII"
       },
       {
         "name": "机器人ETF易方达",
         "code": "159530",
-        "pct": 5.04,
-        "amount": 148121.0,
+        "pct": 5.1,
+        "amount": 179410.0,
         "category": "机器人"
       },
       {
         "name": "机器人ETF景顺",
         "code": "159559",
-        "pct": 4.98,
-        "amount": 29488.0,
+        "pct": 4.77,
+        "amount": 35357.0,
         "category": "机器人"
+      },
+      {
+        "name": "半导体设备ETF广发",
+        "code": "560780",
+        "pct": 4.64,
+        "amount": 40235.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "科创半导体ETF华夏",
+        "code": "588170",
+        "pct": 4.64,
+        "amount": 234995.0,
+        "category": "芯片/半导体"
       },
       {
         "name": "半导体设备ETF国泰",
         "code": "159516",
-        "pct": 4.29,
-        "amount": 309202.0,
+        "pct": 4.64,
+        "amount": 402673.0,
         "category": "芯片/半导体"
       },
       {
         "name": "半导体设备ETF易方达",
         "code": "159558",
-        "pct": 4.29,
-        "amount": 61715.0,
-        "category": "芯片/半导体"
-      },
-      {
-        "name": "半导体设备ETF广发",
-        "code": "560780",
-        "pct": 4.2,
-        "amount": 33916.0,
-        "category": "芯片/半导体"
-      },
-      {
-        "name": "标普油气ETF嘉实",
-        "code": "159518",
-        "pct": 3.96,
-        "amount": 162408.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "科创半导体ETF华夏",
-        "code": "588170",
-        "pct": 3.9,
-        "amount": 197271.0,
+        "pct": 4.59,
+        "amount": 79389.0,
         "category": "芯片/半导体"
       },
       {
         "name": "半导体设备ETF华夏",
         "code": "562590",
-        "pct": 3.86,
-        "amount": 43161.0,
+        "pct": 4.4,
+        "amount": 47949.0,
         "category": "芯片/半导体"
       },
       {
-        "name": "机器人ETF万家",
-        "code": "560630",
-        "pct": 3.49,
-        "amount": 2631.0,
-        "category": "机器人"
+        "name": "标普油气ETF嘉实",
+        "code": "159518",
+        "pct": 3.61,
+        "amount": 312853.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "半导体设备ETF招商",
+        "code": "561980",
+        "pct": 3.6,
+        "amount": 43178.0,
+        "category": "芯片/半导体"
       }
     ]
   }
