@@ -2989,5 +2989,587 @@
         "digest": ""
       }
     ]
+  },
+  {
+    "date": "2026-05-15",
+    "time": "21:00",
+    "period": "晚间",
+    "announcements": [
+      {
+        "art_code": "AN202605151822354403",
+        "title": "厦门钨业:福建至理律师事务所关于厦门钨业股份有限公司2025年年度股东会的法律意见书",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "法律意见书",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354403.html"
+      },
+      {
+        "art_code": "AN202605151822354397",
+        "title": "厦门钨业:厦门钨业第十届董事会第二十八次会议决议公告",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "高管人员任职变动,董事会决议公告",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354397.html"
+      },
+      {
+        "art_code": "AN202605151822354399",
+        "title": "厦门钨业:厦门钨业关于下属公司以公开挂牌方式增资扩股形成关联交易的公告",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "增资扩股,关联交易",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354399.html"
+      },
+      {
+        "art_code": "AN202605151822354398",
+        "title": "厦门钨业:厦门钨业关于选举及调整公司第十届董事会专门委员会委员的公告",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "高管人员任职变动",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354398.html"
+      },
+      {
+        "art_code": "AN202605151822354401",
+        "title": "厦门钨业:厦门钨业第十届董事会独立董事专门会议第十六次会议决议",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "董事会决议公告",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354401.html"
+      },
+      {
+        "art_code": "AN202605151822354402",
+        "title": "厦门钨业:北京市中伦(上海)律师事务所关于中证中小投资者服务中心有限责任公司公开征集厦门钨业股东表决权的法律意见书",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "法律意见书",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354402.html"
+      },
+      {
+        "art_code": "AN202605151822354404",
+        "title": "厦门钨业:厦门钨业审计委员会关于第十届董事会第二十八次会议相关事项的书面确认意见",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "董事会决议公告",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354404.html"
+      },
+      {
+        "art_code": "AN202605151822352852",
+        "title": "生益电子:生益电子2025年年度股东会决议公告",
+        "date": "2026-05-16",
+        "time": "18:57",
+        "category": "分配方案决议公告,股东大会决议公告,高管人员任职变动",
+        "codes": [
+          "688183"
+        ],
+        "names": [
+          "生益电子"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688183/AN202605151822352852.html"
+      },
+      {
+        "art_code": "AN202605151822352855",
+        "title": "生益电子:生益电子第四届董事会第一次会议决议公告",
+        "date": "2026-05-16",
+        "time": "18:57",
+        "category": "高管人员任职变动,董事会决议公告",
+        "codes": [
+          "688183"
+        ],
+        "names": [
+          "生益电子"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688183/AN202605151822352855.html"
+      },
+      {
+        "art_code": "AN202605151822352854",
+        "title": "生益电子:北京市康达(广州)律师事务所关于生益电子股份有限公司2025年年度股东会的法律意见书",
+        "date": "2026-05-16",
+        "time": "18:57",
+        "category": "法律意见书",
+        "codes": [
+          "688183"
+        ],
+        "names": [
+          "生益电子"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688183/AN202605151822352854.html"
+      },
+      {
+        "art_code": "AN202605151822352498",
+        "title": "佰维存储:关于更新召开2025年年度暨2026年第一季度中英双语业绩说明会的公告",
+        "date": "2026-05-16",
+        "time": "18:45",
+        "category": "其他",
+        "codes": [
+          "688525"
+        ],
+        "names": [
+          "佰维存储"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688525/AN202605151822352498.html"
+      },
+      {
+        "art_code": "AN202605151822352499",
+        "title": "佰维存储:关于签署战略合作协议并提供财务资助的公告",
+        "date": "2026-05-16",
+        "time": "18:45",
+        "category": "获得补贴（资助）,签订协议",
+        "codes": [
+          "688525"
+        ],
+        "names": [
+          "佰维存储"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688525/AN202605151822352499.html"
+      },
+      {
+        "art_code": "AN202605151822350977",
+        "title": "中钨高新:关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+        "date": "2026-05-16",
+        "time": "18:12",
+        "category": "其他",
+        "codes": [
+          "000657"
+        ],
+        "names": [
+          "中钨高新"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/000657/AN202605151822350977.html"
+      },
+      {
+        "art_code": "AN202605151822350991",
+        "title": "中钨高新:第十一届董事会第十次(临时)会议决议公告",
+        "date": "2026-05-16",
+        "time": "18:12",
+        "category": "董事会决议公告",
+        "codes": [
+          "000657"
+        ],
+        "names": [
+          "中钨高新"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/000657/AN202605151822350991.html"
+      },
+      {
+        "art_code": "AN202605151822350998",
+        "title": "中钨高新:关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+        "date": "2026-05-16",
+        "time": "18:12",
+        "category": "其他",
+        "codes": [
+          "000657"
+        ],
+        "names": [
+          "中钨高新"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/000657/AN202605151822350998.html"
+      },
+      {
+        "art_code": "AN202605151822349393",
+        "title": "大金重工:关于诉讼事项的进展公告",
+        "date": "2026-05-16",
+        "time": "17:40",
+        "category": "诉讼仲裁",
+        "codes": [
+          "002487"
+        ],
+        "names": [
+          "大金重工"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002487/AN202605151822349393.html"
+      },
+      {
+        "art_code": "AN202605151822348258",
+        "title": "紫金矿业:紫金矿业集团股份有限公司关于召开2025年年度股东会的通知",
+        "date": "2026-05-16",
+        "time": "17:13",
+        "category": "召开股东大会通知",
+        "codes": [
+          "601899"
+        ],
+        "names": [
+          "紫金矿业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/601899/AN202605151822348258.html"
+      },
+      {
+        "art_code": "AN202605151822347848",
+        "title": "盛和资源:盛和资源控股股份有限公司2025年年度股东会会议资料",
+        "date": "2026-05-16",
+        "time": "17:06",
+        "category": "股东大会资料,高管人员任职变动",
+        "codes": [
+          "600392"
+        ],
+        "names": [
+          "盛和资源"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600392/AN202605151822347848.html"
+      },
+      {
+        "art_code": "AN202605151822345148",
+        "title": "中国巨石:中国巨石关于控股股东增持股份结果公告",
+        "date": "2026-05-16",
+        "time": "15:59",
+        "category": "股东/实际控制人股份增持",
+        "codes": [
+          "600176"
+        ],
+        "names": [
+          "中国巨石"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600176/AN202605151822345148.html"
+      },
+      {
+        "art_code": "AN202605151822354400",
+        "title": "厦门钨业:厦门钨业2025年年度股东会决议公告",
+        "date": "2026-05-16",
+        "time": "19:55",
+        "category": "股东大会决议公告,高管人员任职变动",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822354400.html"
+      },
+      {
+        "art_code": "AN202605151822352853",
+        "title": "生益电子:生益电子关于完成董事会换届选举及聘任高级管理人员、审计部负责人、证券事务代表的公告",
+        "date": "2026-05-16",
+        "time": "18:57",
+        "category": "高管人员任职变动",
+        "codes": [
+          "688183"
+        ],
+        "names": [
+          "生益电子"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688183/AN202605151822352853.html"
+      },
+      {
+        "art_code": "AN202605151822348393",
+        "title": "凯格精机:关于控股股东一致行动人变更名称及其他工商信息暨完成工商变更登记的公告",
+        "date": "2026-05-15",
+        "time": "17:16",
+        "category": "公司关联方基本资料变更",
+        "codes": [
+          "301338"
+        ],
+        "names": [
+          "凯格精机"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301338/AN202605151822348393.html"
+      },
+      {
+        "art_code": "AN202605151822355494",
+        "title": "胜宏科技:300476胜宏科技投资者关系管理信息20260515",
+        "date": "2026-05-15",
+        "time": "20:46",
+        "category": "调研活动",
+        "codes": [
+          "300476"
+        ],
+        "names": [
+          "胜宏科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300476/AN202605151822355494.html"
+      },
+      {
+        "art_code": "AN202605151822354299",
+        "title": "上海新阳:东方财富证券股份有限公司关于上海新阳半导体材料股份有限公司2026年股票增值权激励计划授予相关事项之独立财务顾问报告",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "保荐/核查意见",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354299.html"
+      },
+      {
+        "art_code": "AN202605151822354293",
+        "title": "上海新阳:关于向公司2026年股票增值权激励计划激励对象授予股票增值权的公告",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "股权激励对象名单,股权激励进展公告",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354293.html"
+      },
+      {
+        "art_code": "AN202605151822354288",
+        "title": "上海新阳:第六届董事会第十次会议决议公告",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "高管人员任职变动,董事会决议公告",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354288.html"
+      },
+      {
+        "art_code": "AN202605151822354289",
+        "title": "上海新阳:关于向公司新成长(四期)股权激励计划激励对象授予限制性股票的公告",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "股权激励进展公告",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354289.html"
+      },
+      {
+        "art_code": "AN202605151822354292",
+        "title": "上海新阳:董事会薪酬与考核委员会关于公司新成长(四期)股权激励计划及2026年股票增值权激励计划激励对象名单(截至授予日)的核查意见",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "专项说明/独立意见,保荐/核查意见",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354292.html"
+      },
+      {
+        "art_code": "AN202605151822354303",
+        "title": "上海新阳:北京隆安律师事务所上海分所关于上海新阳半导体材料股份有限公司新成长(四期)股权激励计划授予事项的法律意见书",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "法律意见书",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354303.html"
+      },
+      {
+        "art_code": "AN202605151822354310",
+        "title": "上海新阳:东方财富证券股份有限公司关于上海新阳半导体材料股份有限公司新成长(四期)股权激励计划授予相关事项之独立财务顾问报告",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "保荐/核查意见",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354310.html"
+      },
+      {
+        "art_code": "AN202605151822354296",
+        "title": "上海新阳:北京隆安律师事务所上海分所关于上海新阳半导体材料股份有限公司2026年股票增值权激励计划授予事项的法律意见书",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "法律意见书",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354296.html"
+      },
+      {
+        "art_code": "AN202605151822354297",
+        "title": "上海新阳:关于调整公司第六届董事会专门委员会委员的公告",
+        "date": "2026-05-15",
+        "time": "19:52",
+        "category": "高管人员任职变动",
+        "codes": [
+          "300236"
+        ],
+        "names": [
+          "上海新阳"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300236/AN202605151822354297.html"
+      },
+      {
+        "art_code": "AN202605151822353742",
+        "title": "中际旭创:投资者关系活动记录表20260515",
+        "date": "2026-05-15",
+        "time": "19:31",
+        "category": "调研活动",
+        "codes": [
+          "300308"
+        ],
+        "names": [
+          "中际旭创"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300308/AN202605151822353742.html"
+      },
+      {
+        "art_code": "AN202605151822353632",
+        "title": "协创数据:关于公司为全资子公司提供担保的进展公告",
+        "date": "2026-05-15",
+        "time": "19:24",
+        "category": "提供/对外担保公告",
+        "codes": [
+          "300857"
+        ],
+        "names": [
+          "协创数据"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300857/AN202605151822353632.html"
+      },
+      {
+        "art_code": "AN202605151822353613",
+        "title": "协创数据:关于部分董事、高级管理人员股份减持计划完成及部分董事提前终止减持计划的公告",
+        "date": "2026-05-15",
+        "time": "19:22",
+        "category": "股东/实际控制人股份减持",
+        "codes": [
+          "300857"
+        ],
+        "names": [
+          "协创数据"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300857/AN202605151822353613.html"
+      },
+      {
+        "art_code": "AN202605151822352603",
+        "title": "鼎龙股份:300054鼎龙股份投资者关系管理信息20260515",
+        "date": "2026-05-15",
+        "time": "18:51",
+        "category": "调研活动",
+        "codes": [
+          "300054"
+        ],
+        "names": [
+          "鼎龙股份"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300054/AN202605151822352603.html"
+      },
+      {
+        "art_code": "AN202605151822351253",
+        "title": "德福科技:北京市金杜律师事务所上海分所关于九江德福科技股份有限公司2025年年度股东会之法律意见书",
+        "date": "2026-05-15",
+        "time": "18:17",
+        "category": "法律意见书",
+        "codes": [
+          "301511"
+        ],
+        "names": [
+          "德福科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301511/AN202605151822351253.html"
+      },
+      {
+        "art_code": "AN202605151822351256",
+        "title": "德福科技:公司2025年年度股东会决议公告",
+        "date": "2026-05-15",
+        "time": "18:17",
+        "category": "分配方案决议公告,股东大会决议公告",
+        "codes": [
+          "301511"
+        ],
+        "names": [
+          "德福科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301511/AN202605151822351256.html"
+      },
+      {
+        "art_code": "AN202605151822349767",
+        "title": "湖南裕能:2026年5月15日投资者关系活动记录表",
+        "date": "2026-05-15",
+        "time": "17:50",
+        "category": "调研活动",
+        "codes": [
+          "301358"
+        ],
+        "names": [
+          "湖南裕能"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301358/AN202605151822349767.html"
+      },
+      {
+        "art_code": "AN202605151822349572",
+        "title": "广合科技:2026年5月15日投资者关系活动记录表",
+        "date": "2026-05-15",
+        "time": "17:46",
+        "category": "调研活动",
+        "codes": [
+          "001389"
+        ],
+        "names": [
+          "广合科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/001389/AN202605151822349572.html"
+      },
+      {
+        "art_code": "AN202605151822343824",
+        "title": "厦门钨业:投资者活动记录表(含2025年年报暨2026年一季报业绩说明会)2026-投关-003",
+        "date": "2026-05-15",
+        "time": "16:18",
+        "category": "调研活动",
+        "codes": [
+          "600549"
+        ],
+        "names": [
+          "厦门钨业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600549/AN202605151822343824.html"
+      }
+    ],
+    "reports": []
   }
 ]
