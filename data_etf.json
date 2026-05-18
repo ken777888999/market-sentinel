@@ -742,5 +742,80 @@
         "category": "芯片/半导体"
       }
     ]
+  },
+  {
+    "date": "2026-05-18",
+    "top10": [
+      {
+        "name": "标普油气ETF嘉实",
+        "code": "159518",
+        "pct": 3.92,
+        "amount": 58352.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "卫星ETF鹏华",
+        "code": "563790",
+        "pct": 3.58,
+        "amount": 5487.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "卫星ETF广发",
+        "code": "512630",
+        "pct": 3.55,
+        "amount": 13542.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "卫星ETF易方达",
+        "code": "563530",
+        "pct": 3.5,
+        "amount": 10828.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "标普油气ETF富国",
+        "code": "513350",
+        "pct": 3.43,
+        "amount": 64121.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "卫星ETF富国",
+        "code": "563230",
+        "pct": 3.42,
+        "amount": 27434.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "数字经济ETF工银",
+        "code": "561220",
+        "pct": 3.31,
+        "amount": 1028.0,
+        "category": "数字经济"
+      },
+      {
+        "name": "消费电子ETF招商",
+        "code": "159779",
+        "pct": 3.3,
+        "amount": 903.0,
+        "category": "消费/白酒"
+      },
+      {
+        "name": "消费电子ETF平安",
+        "code": "561600",
+        "pct": 2.91,
+        "amount": 1122.0,
+        "category": "消费/白酒"
+      },
+      {
+        "name": "5GETF博时",
+        "code": "159811",
+        "pct": 2.9,
+        "amount": 859.0,
+        "category": "通信/5G"
+      }
+    ]
   }
 ]
