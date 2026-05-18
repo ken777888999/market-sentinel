@@ -747,74 +747,74 @@
     "date": "2026-05-18",
     "top10": [
       {
-        "name": "标普油气ETF嘉实",
-        "code": "159518",
-        "pct": 3.92,
-        "amount": 58352.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "卫星ETF鹏华",
-        "code": "563790",
-        "pct": 3.58,
-        "amount": 5487.0,
-        "category": "军工/航空航天"
-      },
-      {
-        "name": "卫星ETF广发",
-        "code": "512630",
-        "pct": 3.55,
-        "amount": 13542.0,
-        "category": "军工/航空航天"
-      },
-      {
-        "name": "卫星ETF易方达",
-        "code": "563530",
-        "pct": 3.5,
-        "amount": 10828.0,
-        "category": "军工/航空航天"
-      },
-      {
         "name": "标普油气ETF富国",
         "code": "513350",
-        "pct": 3.43,
-        "amount": 64121.0,
+        "pct": 6.54,
+        "amount": 186406.0,
         "category": "海外QDII"
       },
       {
-        "name": "卫星ETF富国",
-        "code": "563230",
-        "pct": 3.42,
-        "amount": 27434.0,
-        "category": "军工/航空航天"
+        "name": "标普油气ETF嘉实",
+        "code": "159518",
+        "pct": 5.55,
+        "amount": 145450.0,
+        "category": "海外QDII"
       },
       {
         "name": "数字经济ETF工银",
         "code": "561220",
-        "pct": 3.31,
-        "amount": 1028.0,
+        "pct": 2.58,
+        "amount": 1100.0,
         "category": "数字经济"
       },
       {
         "name": "消费电子ETF招商",
         "code": "159779",
-        "pct": 3.3,
-        "amount": 903.0,
+        "pct": 2.56,
+        "amount": 1257.0,
         "category": "消费/白酒"
+      },
+      {
+        "name": "能源化工ETF建信",
+        "code": "159981",
+        "pct": 2.43,
+        "amount": 44991.0,
+        "category": "煤炭/能源"
       },
       {
         "name": "消费电子ETF平安",
         "code": "561600",
-        "pct": 2.91,
-        "amount": 1122.0,
+        "pct": 2.33,
+        "amount": 1466.0,
         "category": "消费/白酒"
       },
       {
-        "name": "5GETF博时",
-        "code": "159811",
-        "pct": 2.9,
-        "amount": 859.0,
-        "category": "通信/5G"
+        "name": "机器人ETF景顺",
+        "code": "159559",
+        "pct": 2.17,
+        "amount": 15920.0,
+        "category": "机器人"
+      },
+      {
+        "name": "卫星ETF鹏华",
+        "code": "563790",
+        "pct": 2.15,
+        "amount": 7537.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "卫星ETF广发",
+        "code": "512630",
+        "pct": 2.08,
+        "amount": 18209.0,
+        "category": "军工/航空航天"
+      },
+      {
+        "name": "卫星ETF易方达",
+        "code": "563530",
+        "pct": 2.08,
+        "amount": 14622.0,
+        "category": "军工/航空航天"
       }
     ]
   }
