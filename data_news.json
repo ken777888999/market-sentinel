@@ -3614,5 +3614,27 @@
       }
     ],
     "reports": []
+  },
+  {
+    "date": "2026-05-18",
+    "time": "09:00",
+    "period": "早间",
+    "announcements": [
+      {
+        "art_code": "AN202605171822384944",
+        "title": "华明装备:002270华明装备投资者关系管理信息20260514",
+        "date": "2026-05-17",
+        "time": "21:54",
+        "category": "调研活动",
+        "codes": [
+          "002270"
+        ],
+        "names": [
+          "华明装备"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002270/AN202605171822384944.html"
+      }
+    ],
+    "reports": []
   }
 ]
