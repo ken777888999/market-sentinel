@@ -817,5 +817,80 @@
         "category": null
       }
     ]
+  },
+  {
+    "date": "2026-05-19",
+    "top10": [
+      {
+        "name": "公用事业ETF万家",
+        "code": "560620",
+        "pct": 2.5,
+        "amount": 66.0,
+        "category": null
+      },
+      {
+        "name": "电力ETF华安",
+        "code": "512140",
+        "pct": 2.24,
+        "amount": 2176.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF博时",
+        "code": "561700",
+        "pct": 2.2,
+        "amount": 568.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF银华",
+        "code": "562350",
+        "pct": 2.2,
+        "amount": 1023.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF平安",
+        "code": "560460",
+        "pct": 2.19,
+        "amount": 3629.0,
+        "category": "电力"
+      },
+      {
+        "name": "公用事业ETF鹏华",
+        "code": "560190",
+        "pct": 2.16,
+        "amount": 39.0,
+        "category": null
+      },
+      {
+        "name": "电力ETF易方达",
+        "code": "560930",
+        "pct": 2.13,
+        "amount": 968.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF华泰柏瑞",
+        "code": "561560",
+        "pct": 2.12,
+        "amount": 6078.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF广发",
+        "code": "159611",
+        "pct": 2.05,
+        "amount": 28023.0,
+        "category": "电力"
+      },
+      {
+        "name": "绿色电力ETF富国",
+        "code": "561170",
+        "pct": 2.04,
+        "amount": 2002.0,
+        "category": "电力"
+      }
+    ]
   }
 ]
