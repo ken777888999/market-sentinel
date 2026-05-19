@@ -822,73 +822,73 @@
     "date": "2026-05-19",
     "top10": [
       {
-        "name": "半导体设备ETF华夏",
-        "code": "562590",
-        "pct": 3.19,
-        "amount": 32530.0,
-        "category": "芯片/半导体"
-      },
-      {
         "name": "电力ETF银华",
         "code": "562350",
-        "pct": 3.18,
-        "amount": 1424.0,
+        "pct": 3.92,
+        "amount": 2640.0,
         "category": "电力"
-      },
-      {
-        "name": "半导体设备ETF易方达",
-        "code": "159558",
-        "pct": 3.11,
-        "amount": 61161.0,
-        "category": "芯片/半导体"
       },
       {
         "name": "电力ETF平安",
         "code": "560460",
-        "pct": 3.08,
-        "amount": 5874.0,
+        "pct": 3.58,
+        "amount": 7942.0,
         "category": "电力"
       },
       {
         "name": "公用事业ETF万家",
         "code": "560620",
-        "pct": 2.98,
-        "amount": 120.0,
+        "pct": 3.56,
+        "amount": 159.0,
         "category": null
-      },
-      {
-        "name": "半导体设备ETF广发",
-        "code": "560780",
-        "pct": 2.97,
-        "amount": 31121.0,
-        "category": "芯片/半导体"
-      },
-      {
-        "name": "电力ETF华泰柏瑞",
-        "code": "561560",
-        "pct": 2.96,
-        "amount": 8187.0,
-        "category": "电力"
-      },
-      {
-        "name": "电力ETF易方达",
-        "code": "560930",
-        "pct": 2.94,
-        "amount": 1930.0,
-        "category": "电力"
       },
       {
         "name": "绿色电力ETF易方达",
         "code": "562960",
-        "pct": 2.91,
-        "amount": 6926.0,
+        "pct": 3.54,
+        "amount": 8817.0,
+        "category": "电力"
+      },
+      {
+        "name": "绿色电力ETF富国",
+        "code": "561170",
+        "pct": 3.52,
+        "amount": 4716.0,
         "category": "电力"
       },
       {
         "name": "电力ETF广发",
         "code": "159611",
-        "pct": 2.91,
-        "amount": 40447.0,
+        "pct": 3.51,
+        "amount": 59208.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF华泰柏瑞",
+        "code": "561560",
+        "pct": 3.46,
+        "amount": 11307.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF天弘",
+        "code": "560450",
+        "pct": 3.45,
+        "amount": 4054.0,
+        "category": "电力"
+      },
+      {
+        "name": "电力ETF博时",
+        "code": "561700",
+        "pct": 3.42,
+        "amount": 1182.0,
+        "category": "电力"
+      },
+      {
+        "name": "绿电ETF华夏",
+        "code": "562550",
+        "pct": 3.38,
+        "amount": 24716.0,
         "category": "电力"
       }
     ]
