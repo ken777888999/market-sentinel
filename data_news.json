@@ -4281,5 +4281,377 @@
         "digest": ""
       }
     ]
+  },
+  {
+    "date": "2026-05-20",
+    "time": "21:00",
+    "period": "晚间",
+    "announcements": [
+      {
+        "art_code": "AN202605201822500364",
+        "title": "金海通:关于全资子公司购买土地使用权暨投资建设上海澜博半导体设备制造中心建设项目的进展公告",
+        "date": "2026-05-21",
+        "time": "19:14",
+        "category": "收购出售资产/股权",
+        "codes": [
+          "603061"
+        ],
+        "names": [
+          "金海通"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/603061/AN202605201822500364.html"
+      },
+      {
+        "art_code": "AN202605201822500356",
+        "title": "金海通:股东减持股份计划公告",
+        "date": "2026-05-21",
+        "time": "19:14",
+        "category": "股东/实际控制人股份减持",
+        "codes": [
+          "603061"
+        ],
+        "names": [
+          "金海通"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/603061/AN202605201822500356.html"
+      },
+      {
+        "art_code": "AN202605201822500123",
+        "title": "中钨高新:2025年度股东会决议公告",
+        "date": "2026-05-21",
+        "time": "19:10",
+        "category": "分配方案决议公告,股东大会决议公告",
+        "codes": [
+          "000657"
+        ],
+        "names": [
+          "中钨高新"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/000657/AN202605201822500123.html"
+      },
+      {
+        "art_code": "AN202605201822500146",
+        "title": "中钨高新:北京市嘉源律师事务所关于中钨高新材料股份有限公司2025年度股东会的法律意见书",
+        "date": "2026-05-21",
+        "time": "19:10",
+        "category": "法律意见书",
+        "codes": [
+          "000657"
+        ],
+        "names": [
+          "中钨高新"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/000657/AN202605201822500146.html"
+      },
+      {
+        "art_code": "AN202605201822499415",
+        "title": "云铝股份:云南铝业股份有限公司关于公司副总经理离任的公告",
+        "date": "2026-05-21",
+        "time": "18:57",
+        "category": "高管人员任职变动",
+        "codes": [
+          "000807"
+        ],
+        "names": [
+          "云铝股份"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/000807/AN202605201822499415.html"
+      },
+      {
+        "art_code": "AN202605201822498303",
+        "title": "佰维存储:2026年第二次临时股东会会议资料",
+        "date": "2026-05-21",
+        "time": "18:34",
+        "category": "股东大会资料",
+        "codes": [
+          "688525"
+        ],
+        "names": [
+          "佰维存储"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688525/AN202605201822498303.html"
+      },
+      {
+        "art_code": "AN202605201822497578",
+        "title": "生益电子:生益电子关于2025年度向特定对象发行A股股票申请获得上海证券交易所审核通过的公告",
+        "date": "2026-05-21",
+        "time": "18:21",
+        "category": "增发获准公告",
+        "codes": [
+          "688183"
+        ],
+        "names": [
+          "生益电子"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688183/AN202605201822497578.html"
+      },
+      {
+        "art_code": "AN202605201822496523",
+        "title": "奥来德:2025年年度股东会决议公告",
+        "date": "2026-05-21",
+        "time": "18:04",
+        "category": "分配方案决议公告,股东大会决议公告",
+        "codes": [
+          "688378"
+        ],
+        "names": [
+          "奥来德"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688378/AN202605201822496523.html"
+      },
+      {
+        "art_code": "AN202605201822496521",
+        "title": "奥来德:北京德恒律师事务所关于吉林奥来德光电材料股份有限公司2025年年度股东会的法律意见",
+        "date": "2026-05-21",
+        "time": "18:04",
+        "category": "法律意见书",
+        "codes": [
+          "688378"
+        ],
+        "names": [
+          "奥来德"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688378/AN202605201822496521.html"
+      },
+      {
+        "art_code": "AN202605201822496284",
+        "title": "中国巨石:北京市嘉源律师事务所关于中国巨石股份有限公司差异化权益分派事项的核查意见",
+        "date": "2026-05-21",
+        "time": "17:59",
+        "category": "保荐/核查意见",
+        "codes": [
+          "600176"
+        ],
+        "names": [
+          "中国巨石"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600176/AN202605201822496284.html"
+      },
+      {
+        "art_code": "AN202605201822493637",
+        "title": "广合科技:关于全资子公司增资完成工商变更登记的公告",
+        "date": "2026-05-21",
+        "time": "17:14",
+        "category": "公司关联方基本资料变更,增资扩股",
+        "codes": [
+          "001389"
+        ],
+        "names": [
+          "广合科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/001389/AN202605201822493637.html"
+      },
+      {
+        "art_code": "AN202605201822500031",
+        "title": "江波龙:关于调整2026年限制性股票激励计划激励对象名单及授予数量的公告",
+        "date": "2026-05-20",
+        "time": "19:08",
+        "category": "股权激励对象名单,股权激励行权价（数量）调整",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822500031.html"
+      },
+      {
+        "art_code": "AN202605201822502906",
+        "title": "江波龙:关于向特定对象发行股票申请获得深圳证券交易所上市审核中心审核通过的公告",
+        "date": "2026-05-20",
+        "time": "20:46",
+        "category": "增发获准公告",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822502906.html"
+      },
+      {
+        "art_code": "AN202605201822502899",
+        "title": "江波龙:关于向特定对象发行股票提交募集说明书(注册稿)等申请文件的提示性公告",
+        "date": "2026-05-20",
+        "time": "20:46",
+        "category": "增发提示性公告",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822502899.html"
+      },
+      {
+        "art_code": "AN202605201822502905",
+        "title": "江波龙:公司2025年度向特定对象发行A股股票募集说明书(注册稿)",
+        "date": "2026-05-20",
+        "time": "20:46",
+        "category": "创业板再融资募集说明书注册稿",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822502905.html"
+      },
+      {
+        "art_code": "AN202605201822502895",
+        "title": "江波龙:中信建投证券股份有限公司关于公司向特定对象发行股票之发行保荐书",
+        "date": "2026-05-20",
+        "time": "20:46",
+        "category": "发行保荐书",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822502895.html"
+      },
+      {
+        "art_code": "AN202605201822502897",
+        "title": "江波龙:中信建投证券股份有限公司关于公司向特定对象发行股票之上市保荐书",
+        "date": "2026-05-20",
+        "time": "20:46",
+        "category": "上市保荐书",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822502897.html"
+      },
+      {
+        "art_code": "AN202605201822500054",
+        "title": "江波龙:关于公司向2026年限制性股票激励计划激励对象首次授予限制性股票的公告",
+        "date": "2026-05-20",
+        "time": "19:08",
+        "category": "股权激励进展公告",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822500054.html"
+      },
+      {
+        "art_code": "AN202605201822500051",
+        "title": "江波龙:董事会薪酬与考核委员会关于2026年限制性股票激励计划首次授予相关事项的核查意见",
+        "date": "2026-05-20",
+        "time": "19:08",
+        "category": "专项说明/独立意见,保荐/核查意见",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822500051.html"
+      },
+      {
+        "art_code": "AN202605201822500042",
+        "title": "江波龙:关于公司新增2026年度日常关联交易预计的公告",
+        "date": "2026-05-20",
+        "time": "19:08",
+        "category": "关联交易",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822500042.html"
+      },
+      {
+        "art_code": "AN202605201822500036",
+        "title": "江波龙:上海兰迪律师事务所关于公司2026年限制性股票激励计划调整暨首次授予限制性股票的法律意见书",
+        "date": "2026-05-20",
+        "time": "19:08",
+        "category": "法律意见书",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822500036.html"
+      },
+      {
+        "art_code": "AN202605201822500046",
+        "title": "江波龙:第三届董事会第十八次会议决议公告",
+        "date": "2026-05-20",
+        "time": "19:08",
+        "category": "董事会决议公告",
+        "codes": [
+          "301308"
+        ],
+        "names": [
+          "江波龙"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301308/AN202605201822500046.html"
+      },
+      {
+        "art_code": "AN202605201822499342",
+        "title": "鼎龙股份:关于2024年股票期权激励计划第二个行权期采用自主行权模式的提示性公告",
+        "date": "2026-05-20",
+        "time": "18:56",
+        "category": "股权激励进展公告,其它",
+        "codes": [
+          "300054"
+        ],
+        "names": [
+          "鼎龙股份"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300054/AN202605201822499342.html"
+      },
+      {
+        "art_code": "AN202605201822497691",
+        "title": "中一科技:国浩律师(武汉)事务所关于湖北中一科技股份有限公司2025年年度股东会的法律意见书",
+        "date": "2026-05-20",
+        "time": "18:23",
+        "category": "法律意见书",
+        "codes": [
+          "301150"
+        ],
+        "names": [
+          "中一科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301150/AN202605201822497691.html"
+      },
+      {
+        "art_code": "AN202605201822497683",
+        "title": "中一科技:2025年年度股东会决议公告",
+        "date": "2026-05-20",
+        "time": "18:23",
+        "category": "股东大会决议公告",
+        "codes": [
+          "301150"
+        ],
+        "names": [
+          "中一科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301150/AN202605201822497683.html"
+      },
+      {
+        "art_code": "AN202605201822496701",
+        "title": "震裕科技:关于对外担保的进展公告",
+        "date": "2026-05-20",
+        "time": "18:07",
+        "category": "提供/对外担保公告",
+        "codes": [
+          "300953"
+        ],
+        "names": [
+          "震裕科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300953/AN202605201822496701.html"
+      }
+    ],
+    "reports": []
   }
 ]
