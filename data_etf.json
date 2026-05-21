@@ -967,5 +967,80 @@
         "category": "芯片/半导体"
       }
     ]
+  },
+  {
+    "date": "2026-05-21",
+    "top10": [
+      {
+        "name": "中韩半导体ETF华泰柏瑞",
+        "code": "513310",
+        "pct": 8.27,
+        "amount": 928.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "科创医药ETF鹏华",
+        "code": "588250",
+        "pct": 4.61,
+        "amount": 1638.0,
+        "category": "医药"
+      },
+      {
+        "name": "科创医药ETF华夏",
+        "code": "588130",
+        "pct": 4.41,
+        "amount": 2336.0,
+        "category": "医药"
+      },
+      {
+        "name": "半导体设备ETF国泰",
+        "code": "159516",
+        "pct": 4.27,
+        "amount": 212299.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "金融科技ETF华宝",
+        "code": "159851",
+        "pct": 4.14,
+        "amount": 37148.0,
+        "category": null
+      },
+      {
+        "name": "半导体ETF鹏华",
+        "code": "159813",
+        "pct": 4.12,
+        "amount": 29913.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "半导体ETF博时",
+        "code": "159582",
+        "pct": 4.09,
+        "amount": 8367.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "半导体设备ETF招商",
+        "code": "561980",
+        "pct": 4.08,
+        "amount": 24807.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "芯片ETF广发",
+        "code": "159801",
+        "pct": 4.04,
+        "amount": 18783.0,
+        "category": "芯片/半导体"
+      },
+      {
+        "name": "医疗ETF国泰",
+        "code": "159828",
+        "pct": 4.01,
+        "amount": 6569.0,
+        "category": "医药"
+      }
+    ]
   }
 ]
