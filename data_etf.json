@@ -974,72 +974,72 @@
       {
         "name": "中韩半导体ETF华泰柏瑞",
         "code": "513310",
-        "pct": 5.87,
-        "amount": 1011364.0,
+        "pct": 4.42,
+        "amount": 1388014.0,
         "category": "芯片/半导体"
-      },
-      {
-        "name": "机器人ETF景顺",
-        "code": "159559",
-        "pct": 3.25,
-        "amount": 22248.0,
-        "category": "机器人"
-      },
-      {
-        "name": "科创医药ETF鹏华",
-        "code": "588250",
-        "pct": 3.2,
-        "amount": 2741.0,
-        "category": "医药"
-      },
-      {
-        "name": "机器人ETF易方达",
-        "code": "159530",
-        "pct": 3.15,
-        "amount": 145755.0,
-        "category": "机器人"
-      },
-      {
-        "name": "科创医药ETF华夏",
-        "code": "588130",
-        "pct": 3.07,
-        "amount": 2650.0,
-        "category": "医药"
-      },
-      {
-        "name": "汽车零部件ETF易方达",
-        "code": "159565",
-        "pct": 3.01,
-        "amount": 3423.0,
-        "category": null
-      },
-      {
-        "name": "医疗ETF国泰",
-        "code": "159828",
-        "pct": 3.01,
-        "amount": 10798.0,
-        "category": "医药"
-      },
-      {
-        "name": "汽车ETF国泰",
-        "code": "516110",
-        "pct": 2.9,
-        "amount": 4176.0,
-        "category": "汽车"
       },
       {
         "name": "标普生物科技ETF嘉实",
         "code": "159502",
-        "pct": 2.89,
-        "amount": 24147.0,
+        "pct": 2.57,
+        "amount": 29809.0,
         "category": "医药"
       },
       {
-        "name": "医疗ETF易方达",
-        "code": "159847",
-        "pct": 2.89,
-        "amount": 3887.0,
+        "name": "基本面ETF建信",
+        "code": "159916",
+        "pct": 2.37,
+        "amount": 1575.0,
+        "category": null
+      },
+      {
+        "name": "纳指ETF国泰",
+        "code": "513100",
+        "pct": 2.19,
+        "amount": 132048.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "日经ETF工银",
+        "code": "159866",
+        "pct": 2.19,
+        "amount": 12256.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "汽车零部件ETF易方达",
+        "code": "159565",
+        "pct": 2.15,
+        "amount": 4838.0,
+        "category": null
+      },
+      {
+        "name": "港股通创新药ETF汇添富",
+        "code": "159570",
+        "pct": 2.09,
+        "amount": 281376.0,
         "category": "医药"
+      },
+      {
+        "name": "日经225ETF华安",
+        "code": "513880",
+        "pct": 2.07,
+        "amount": 20535.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "纳指生物科技ETF汇添富",
+        "code": "513290",
+        "pct": 1.99,
+        "amount": 14384.0,
+        "category": "医药"
+      },
+      {
+        "name": "大湾区ETF平安",
+        "code": "512970",
+        "pct": 1.98,
+        "amount": 69.0,
+        "category": null
       }
     ]
   }
