@@ -4670,5 +4670,247 @@
         "digest": ""
       }
     ]
+  },
+  {
+    "date": "2026-05-21",
+    "time": "21:00",
+    "period": "晚间",
+    "announcements": [
+      {
+        "art_code": "AN202605211822652607",
+        "title": "智微智能:关于完成工商变更登记并换发营业执照的公告",
+        "date": "2026-05-22",
+        "time": "19:19",
+        "category": "公司经营范围变更,公司办公地址变更,公司注册资本变更",
+        "codes": [
+          "001339"
+        ],
+        "names": [
+          "智微智能"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/001339/AN202605211822652607.html"
+      },
+      {
+        "art_code": "AN202605211822652085",
+        "title": "金海通:国浩律师(深圳)事务所关于天津金海通半导体设备股份有限公司2026年第二次临时股东会法律意见书",
+        "date": "2026-05-22",
+        "time": "19:04",
+        "category": "法律意见书",
+        "codes": [
+          "603061"
+        ],
+        "names": [
+          "金海通"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/603061/AN202605211822652085.html"
+      },
+      {
+        "art_code": "AN202605211822652086",
+        "title": "金海通:2026年第二次临时股东会决议公告",
+        "date": "2026-05-22",
+        "time": "19:04",
+        "category": "股东大会决议公告",
+        "codes": [
+          "603061"
+        ],
+        "names": [
+          "金海通"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/603061/AN202605211822652086.html"
+      },
+      {
+        "art_code": "AN202605211822651304",
+        "title": "华锐精密:2025年年度股东会决议公告",
+        "date": "2026-05-22",
+        "time": "18:46",
+        "category": "股东大会决议公告",
+        "codes": [
+          "688059"
+        ],
+        "names": [
+          "华锐精密"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688059/AN202605211822651304.html"
+      },
+      {
+        "art_code": "AN202605211822651303",
+        "title": "华锐精密:湖南启元律师事务所关于株洲华锐精密工具股份有限公司2025年年度股东会的法律意见书",
+        "date": "2026-05-22",
+        "time": "18:46",
+        "category": "法律意见书",
+        "codes": [
+          "688059"
+        ],
+        "names": [
+          "华锐精密"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688059/AN202605211822651303.html"
+      },
+      {
+        "art_code": "AN202605211822651143",
+        "title": "东方铁塔:2025年度股东会决议公告",
+        "date": "2026-05-22",
+        "time": "18:41",
+        "category": "股东大会决议公告",
+        "codes": [
+          "002545"
+        ],
+        "names": [
+          "东方铁塔"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002545/AN202605211822651143.html"
+      },
+      {
+        "art_code": "AN202605211822651136",
+        "title": "东方铁塔:2025年度股东会法律意见书",
+        "date": "2026-05-22",
+        "time": "18:41",
+        "category": "法律意见书",
+        "codes": [
+          "002545"
+        ],
+        "names": [
+          "东方铁塔"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/002545/AN202605211822651136.html"
+      },
+      {
+        "art_code": "AN202605211822644135",
+        "title": "中国巨石:中国巨石股份有限公司2026年第一次临时股东会会议材料",
+        "date": "2026-05-22",
+        "time": "16:31",
+        "category": "股东大会资料",
+        "codes": [
+          "600176"
+        ],
+        "names": [
+          "中国巨石"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600176/AN202605211822644135.html"
+      },
+      {
+        "art_code": "AN202605211822643806",
+        "title": "中国巨石:中国巨石董事会薪酬与考核委员会关于公司2025年限制性股票激励计划首次授予激励对象名单的公示情况说明及核查意见",
+        "date": "2026-05-22",
+        "time": "16:26",
+        "category": "专项说明/独立意见,保荐/核查意见",
+        "codes": [
+          "600176"
+        ],
+        "names": [
+          "中国巨石"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/600176/AN202605211822643806.html"
+      },
+      {
+        "art_code": "AN202605211822654316",
+        "title": "凯格精机:上海市锦天城(深圳)律师事务所关于东莞市凯格精机股份有限公司2025年年度股东会的法律意见书",
+        "date": "2026-05-21",
+        "time": "20:29",
+        "category": "法律意见书",
+        "codes": [
+          "301338"
+        ],
+        "names": [
+          "凯格精机"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301338/AN202605211822654316.html"
+      },
+      {
+        "art_code": "AN202605211822654320",
+        "title": "凯格精机:2025年年度股东会决议公告",
+        "date": "2026-05-21",
+        "time": "20:29",
+        "category": "股东大会决议公告",
+        "codes": [
+          "301338"
+        ],
+        "names": [
+          "凯格精机"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301338/AN202605211822654320.html"
+      },
+      {
+        "art_code": "AN202605211822652404",
+        "title": "协创数据:关于2023年限制性股票激励计划首次授予部分第三个归属期及预留授予部分第二个归属期归属结果暨股份上市的公告",
+        "date": "2026-05-21",
+        "time": "19:13",
+        "category": "限售股份上市流通",
+        "codes": [
+          "300857"
+        ],
+        "names": [
+          "协创数据"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300857/AN202605211822652404.html"
+      },
+      {
+        "art_code": "AN202605211822650389",
+        "title": "湖南裕能:关于筹划发行H股股票并在香港联合交易所有限公司上市的提示性公告",
+        "date": "2026-05-21",
+        "time": "18:25",
+        "category": "其他",
+        "codes": [
+          "301358"
+        ],
+        "names": [
+          "湖南裕能"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301358/AN202605211822650389.html"
+      },
+      {
+        "art_code": "AN202605211822649588",
+        "title": "中一科技:2025年度业绩说明会投资者关系活动记录表",
+        "date": "2026-05-21",
+        "time": "18:10",
+        "category": "调研活动",
+        "codes": [
+          "301150"
+        ],
+        "names": [
+          "中一科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/301150/AN202605211822649588.html"
+      },
+      {
+        "art_code": "AN202605211822645603",
+        "title": "华锐精密:投资者关系活动记录表(2026年5月19日至2026年5月20日)",
+        "date": "2026-05-21",
+        "time": "17:03",
+        "category": "调研活动",
+        "codes": [
+          "688059"
+        ],
+        "names": [
+          "华锐精密"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/688059/AN202605211822645603.html"
+      },
+      {
+        "art_code": "AN202605211822645107",
+        "title": "震裕科技:关于对外担保的进展公告",
+        "date": "2026-05-21",
+        "time": "16:51",
+        "category": "提供/对外担保公告",
+        "codes": [
+          "300953"
+        ],
+        "names": [
+          "震裕科技"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/300953/AN202605211822645107.html"
+      }
+    ],
+    "reports": [
+      {
+        "code": "600176",
+        "name": "中国巨石",
+        "title": "主业量价齐升，电子布正处大周期上行通道",
+        "org": "华源证券",
+        "rating": "",
+        "date": "2026-05-21",
+        "digest": ""
+      }
+    ]
   }
 ]
