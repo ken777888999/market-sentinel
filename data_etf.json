@@ -974,72 +974,72 @@
       {
         "name": "中韩半导体ETF华泰柏瑞",
         "code": "513310",
-        "pct": 5.04,
-        "amount": 696327.0,
+        "pct": 5.87,
+        "amount": 1011364.0,
         "category": "芯片/半导体"
       },
       {
-        "name": "金融科技ETF鹏华",
-        "code": "563670",
-        "pct": 3.84,
-        "amount": 354.0,
-        "category": null
-      },
-      {
-        "name": "标普生物科技ETF嘉实",
-        "code": "159502",
-        "pct": 3.28,
-        "amount": 18796.0,
-        "category": "医药"
+        "name": "机器人ETF景顺",
+        "code": "159559",
+        "pct": 3.25,
+        "amount": 22248.0,
+        "category": "机器人"
       },
       {
         "name": "科创医药ETF鹏华",
         "code": "588250",
         "pct": 3.2,
-        "amount": 2264.0,
+        "amount": 2741.0,
         "category": "医药"
       },
       {
-        "name": "汽车ETF国泰",
-        "code": "516110",
-        "pct": 3.13,
-        "amount": 3572.0,
-        "category": "汽车"
+        "name": "机器人ETF易方达",
+        "code": "159530",
+        "pct": 3.15,
+        "amount": 145755.0,
+        "category": "机器人"
+      },
+      {
+        "name": "科创医药ETF华夏",
+        "code": "588130",
+        "pct": 3.07,
+        "amount": 2650.0,
+        "category": "医药"
+      },
+      {
+        "name": "汽车零部件ETF易方达",
+        "code": "159565",
+        "pct": 3.01,
+        "amount": 3423.0,
+        "category": null
       },
       {
         "name": "医疗ETF国泰",
         "code": "159828",
         "pct": 3.01,
-        "amount": 9892.0,
+        "amount": 10798.0,
         "category": "医药"
       },
       {
-        "name": "科创医药ETF华夏",
-        "code": "588130",
-        "pct": 2.97,
-        "amount": 2523.0,
-        "category": "医药"
-      },
-      {
-        "name": "日经ETF工银",
-        "code": "159866",
-        "pct": 2.92,
-        "amount": 6881.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "智能汽车ETF国泰",
-        "code": "159889",
+        "name": "汽车ETF国泰",
+        "code": "516110",
         "pct": 2.9,
-        "amount": 589.0,
+        "amount": 4176.0,
         "category": "汽车"
       },
       {
-        "name": "汽车零部件ETF易方达",
-        "code": "159565",
-        "pct": 2.83,
-        "amount": 2265.0,
-        "category": null
+        "name": "标普生物科技ETF嘉实",
+        "code": "159502",
+        "pct": 2.89,
+        "amount": 24147.0,
+        "category": "医药"
+      },
+      {
+        "name": "医疗ETF易方达",
+        "code": "159847",
+        "pct": 2.89,
+        "amount": 3887.0,
+        "category": "医药"
       }
     ]
   }
