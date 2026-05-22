@@ -1047,74 +1047,74 @@
     "date": "2026-05-22",
     "top10": [
       {
-        "name": "日经ETF工银",
-        "code": "159866",
-        "pct": 3.05,
-        "amount": 9639.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "日经225ETF易方达",
-        "code": "513000",
-        "pct": 2.99,
-        "amount": 13029.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "日经225ETF华安",
-        "code": "513880",
-        "pct": 2.86,
-        "amount": 14514.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "日经ETF华夏",
-        "code": "513520",
-        "pct": 2.7,
-        "amount": 19544.0,
-        "category": "海外QDII"
-      },
-      {
-        "name": "5GETF博时",
-        "code": "159811",
-        "pct": 2.52,
-        "amount": 1380.0,
-        "category": "通信/5G"
-      },
-      {
-        "name": "TMT50ETF招商",
-        "code": "159909",
-        "pct": 2.43,
-        "amount": 499.0,
-        "category": null
+        "name": "创业板成长ETF华夏",
+        "code": "159967",
+        "pct": 3.82,
+        "amount": 51646.0,
+        "category": "创业板"
       },
       {
         "name": "消费电子ETF华夏",
         "code": "159732",
-        "pct": 2.38,
-        "amount": 16642.0,
+        "pct": 3.6,
+        "amount": 22424.0,
         "category": "消费/白酒"
       },
       {
         "name": "港股通信息技术ETF华安",
         "code": "513240",
-        "pct": 2.3,
-        "amount": 2917.0,
+        "pct": 3.59,
+        "amount": 4074.0,
         "category": "通信/5G"
       },
       {
-        "name": "创业板成长ETF华夏",
-        "code": "159967",
-        "pct": 2.15,
-        "amount": 40995.0,
-        "category": "创业板"
+        "name": "5GETF博时",
+        "code": "159811",
+        "pct": 3.56,
+        "amount": 1890.0,
+        "category": "通信/5G"
       },
       {
         "name": "通信ETF银华",
         "code": "159994",
-        "pct": 2.09,
-        "amount": 7814.0,
+        "pct": 3.52,
+        "amount": 10462.0,
         "category": "通信/5G"
+      },
+      {
+        "name": "通信ETF华夏",
+        "code": "515050",
+        "pct": 3.39,
+        "amount": 50307.0,
+        "category": "通信/5G"
+      },
+      {
+        "name": "TMT50ETF招商",
+        "code": "159909",
+        "pct": 3.39,
+        "amount": 606.0,
+        "category": null
+      },
+      {
+        "name": "日经ETF工银",
+        "code": "159866",
+        "pct": 3.05,
+        "amount": 10895.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "日经225ETF易方达",
+        "code": "513000",
+        "pct": 3.04,
+        "amount": 15358.0,
+        "category": "海外QDII"
+      },
+      {
+        "name": "日经225ETF华安",
+        "code": "513880",
+        "pct": 2.97,
+        "amount": 17322.0,
+        "category": "海外QDII"
       }
     ]
   }
