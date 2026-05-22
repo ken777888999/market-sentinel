@@ -4912,5 +4912,51 @@
         "digest": ""
       }
     ]
+  },
+  {
+    "date": "2026-05-22",
+    "time": "09:00",
+    "period": "早间",
+    "announcements": [
+      {
+        "art_code": "AN202605221822671298",
+        "title": "中国铝业:中国铝业第九届董事会第十三次会议决议公告",
+        "date": "2026-05-22",
+        "time": "07:47",
+        "category": "董事会决议公告",
+        "codes": [
+          "601600"
+        ],
+        "names": [
+          "中国铝业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/601600/AN202605221822671298.html"
+      },
+      {
+        "art_code": "AN202605221822671294",
+        "title": "中国铝业:中国铝业关于拟投资建设几内亚氧化铝项目暨签署《矿业协议修订与重述版》的公告",
+        "date": "2026-05-22",
+        "time": "07:47",
+        "category": "签订协议",
+        "codes": [
+          "601600"
+        ],
+        "names": [
+          "中国铝业"
+        ],
+        "url": "https://data.eastmoney.com/notices/detail/601600/AN202605221822671294.html"
+      }
+    ],
+    "reports": [
+      {
+        "code": "600176",
+        "name": "中国巨石",
+        "title": "主业量价齐升，电子布正处大周期上行通道",
+        "org": "华源证券",
+        "rating": "",
+        "date": "2026-05-21",
+        "digest": ""
+      }
+    ]
   }
 ]
