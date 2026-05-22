@@ -1049,71 +1049,71 @@
       {
         "name": "消费电子ETF华夏",
         "code": "159732",
-        "pct": 5.64,
-        "amount": 38229.0,
+        "pct": 6.73,
+        "amount": 64414.0,
         "category": "消费/白酒"
       },
       {
         "name": "5GETF博时",
         "code": "159811",
-        "pct": 5.31,
-        "amount": 2519.0,
+        "pct": 6.21,
+        "amount": 3978.0,
         "category": "通信/5G"
-      },
-      {
-        "name": "创业板成长ETF华夏",
-        "code": "159967",
-        "pct": 5.01,
-        "amount": 74670.0,
-        "category": "创业板"
       },
       {
         "name": "港股通信息技术ETF华安",
         "code": "513240",
-        "pct": 4.99,
-        "amount": 5991.0,
+        "pct": 5.89,
+        "amount": 7420.0,
         "category": "通信/5G"
       },
       {
         "name": "通信ETF华夏",
         "code": "515050",
-        "pct": 4.67,
-        "amount": 66028.0,
+        "pct": 5.67,
+        "amount": 92016.0,
         "category": "通信/5G"
+      },
+      {
+        "name": "创业板成长ETF华夏",
+        "code": "159967",
+        "pct": 5.61,
+        "amount": 102322.0,
+        "category": "创业板"
       },
       {
         "name": "TMT50ETF招商",
         "code": "159909",
-        "pct": 4.65,
-        "amount": 1050.0,
+        "pct": 5.6,
+        "amount": 1497.0,
         "category": null
       },
       {
         "name": "通信ETF银华",
         "code": "159994",
-        "pct": 4.49,
-        "amount": 14195.0,
+        "pct": 5.53,
+        "amount": 18793.0,
         "category": "通信/5G"
       },
       {
         "name": "消费电子ETF易方达",
         "code": "562950",
-        "pct": 4.35,
-        "amount": 12284.0,
+        "pct": 5.18,
+        "amount": 17376.0,
         "category": "消费/白酒"
-      },
-      {
-        "name": "消电ETF国泰",
-        "code": "561310",
-        "pct": 4.12,
-        "amount": 939.0,
-        "category": null
       },
       {
         "name": "消费电子ETF富国",
         "code": "561100",
-        "pct": 4.07,
-        "amount": 4932.0,
+        "pct": 4.98,
+        "amount": 6533.0,
+        "category": "消费/白酒"
+      },
+      {
+        "name": "消费电子ETF平安",
+        "code": "561600",
+        "pct": 4.97,
+        "amount": 2776.0,
         "category": "消费/白酒"
       }
     ]
